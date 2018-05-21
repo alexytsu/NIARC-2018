@@ -287,19 +287,23 @@ void loop(){
     float quatReal = gyro.getQuatReal();
     float quatRadianAccuracy = gyro.getQuatRadianAccuracy();
     
-    
-    if(quatReal > 0) Serial.print('+');
-    Serial.print(quatReal, 2);
-    Serial.print(F(","));
     if(quatI > 0) Serial.print('+');
     Serial.print(quatI, 2);
+
     Serial.print(F(","));
+
     if(quatJ > 0) Serial.print('+');
     Serial.print(quatJ, 2);
+
     Serial.print(F(","));
+
     if(quatK > 0) Serial.print('+');
     Serial.print(quatK, 2);
 
+    Serial.print(F(","));
+
+    if(quatReal > 0) Serial.print('+');
+    Serial.print(quatReal, 2);
 
     Serial.println();
   }
