@@ -8,8 +8,10 @@
 	<Property Name="varPersistentID:{1C7713A8-4553-4747-AD5A-9C8680E48B21}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/Redundant/vel calc B (express VI).vi/Elapsed Timer/error in</Property>
 	<Property Name="varPersistentID:{1E2E0894-9EE1-4F6C-BE96-085A3E6D63DC}" Type="Ref">/myRIO-USB/Driving tests/Manual with LIDAR localisation - logging.vi/Elapsed Timer 1/error in</Property>
 	<Property Name="varPersistentID:{3A7DB613-AE07-4FCA-B009-B02B9CF9897A}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/Redundant/vel calc C0 (express VI).vi/Elapsed Timer/reset</Property>
+	<Property Name="varPersistentID:{3BE13087-531E-44EE-9C48-965D8C373190}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/vel calc C1 (express VI) - with Reset.vi/Elapsed Timer/elapsed time (ms)</Property>
 	<Property Name="varPersistentID:{43027D81-FF79-468F-A4DE-AF526D9CD1F7}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/Redundant/vel calc B (express VI).vi/Elapsed Timer/reset</Property>
 	<Property Name="varPersistentID:{46CF8FA8-567F-4A23-8ECD-DCE8876EE3C5}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/Redundant/vel calc C0 (express VI).vi/Elapsed Timer/elapsed time (ms)</Property>
+	<Property Name="varPersistentID:{4A78CE57-DDDD-4E9E-B4DF-2516D7279FFE}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/vel calc C1 (express VI) - with Reset.vi/Elapsed Timer/reset</Property>
 	<Property Name="varPersistentID:{6A421DC2-36A1-48BF-A7A9-5B83B9753BA1}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/Redundant/vel calc A (express VI).vi/Elapsed Timer/reset</Property>
 	<Property Name="varPersistentID:{6B697131-23CB-4E54-8B35-BC46F7E29FC5}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/Redundant/vel calc B (express VI).vi/Elapsed Timer/elapsed time (ms)</Property>
 	<Property Name="varPersistentID:{6F285EEE-9DFF-420C-97F4-8A755E68B526}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/Redundant/vel calc B (express VI).vi/Elapsed Timer/error out</Property>
@@ -20,10 +22,13 @@
 	<Property Name="varPersistentID:{91D980E1-7501-44A9-A463-A457C1DFD7BF}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/Redundant/vel calc C0 (express VI).vi/Elapsed Timer/error out</Property>
 	<Property Name="varPersistentID:{9966A600-E421-4334-B959-245D635B4435}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/Redundant/vel calc A (express VI).vi/Elapsed Timer/error in</Property>
 	<Property Name="varPersistentID:{A1844D41-A16C-44D0-9DB8-0B2C8AC7DF84}" Type="Ref">/myRIO-USB/Driving tests/Manual with LIDAR localisation - logging.vi/Elapsed Timer 1/reset</Property>
+	<Property Name="varPersistentID:{B27E0EEC-0ABB-4DEF-BD99-F10E1776BCD5}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/vel calc C1 (express VI) - with Reset.vi/Elapsed Timer/error out</Property>
+	<Property Name="varPersistentID:{C195C612-77BD-4343-A2C4-0D21C28760DA}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/vel calc C1 (express VI) - with Reset.vi/Elapsed Timer/reset mode</Property>
 	<Property Name="varPersistentID:{C661BC48-2EBE-4792-8F14-2128A940E246}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/Redundant/vel calc C1 (express VI).vi/Elapsed Timer/reset</Property>
 	<Property Name="varPersistentID:{C6F501FA-5DFA-4E1D-A54C-D7A93434C0E8}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/Redundant/vel calc C0 (express VI).vi/Elapsed Timer/error in</Property>
 	<Property Name="varPersistentID:{C7158DE7-5724-4DDC-B7EC-0F7DA0419125}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/Redundant/vel calc A (express VI).vi/Elapsed Timer/elapsed time (ms)</Property>
 	<Property Name="varPersistentID:{D25EFEC1-004A-4B7C-B040-99D743A5E7E2}" Type="Ref">/myRIO-USB/Driving tests/Manual with LIDAR localisation - logging.vi/Elapsed Timer 1/error out</Property>
+	<Property Name="varPersistentID:{D449733F-3032-43E1-B9CA-6D2BEBFB7E9C}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/vel calc C1 (express VI) - with Reset.vi/Elapsed Timer/error in</Property>
 	<Property Name="varPersistentID:{DD182118-6831-45B2-BB0B-DC3E0153AF26}" Type="Ref">/myRIO-USB/Driving tests/Manual with LIDAR localisation - logging.vi/Elapsed Timer 1/reset mode</Property>
 	<Property Name="varPersistentID:{F15EE75D-A212-44F6-A8C6-5A60D57E495A}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/Redundant/vel calc B (express VI).vi/Elapsed Timer/reset mode</Property>
 	<Property Name="varPersistentID:{F92B346E-5112-47CB-B190-1D54E2DE44DF}" Type="Ref">/myRIO-USB/Driving tests/Manual with LIDAR localisation - logging.vi/Elapsed Timer 1/elapsed time (ms)</Property>
@@ -2120,7 +2125,6 @@ AddOutputFilter chunkFilter
 				<Item Name="NI_PID__prctrl compat.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID__prctrl compat.lvlib"/>
 				<Item Name="NI_PID_pid.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID_pid.lvlib"/>
 				<Item Name="lvpidtkt.dll" Type="Document" URL="/&lt;vilib&gt;/addons/control/pid/lvpidtkt.dll"/>
-				<Item Name="NI_AAL_Angle.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AAL_Angle.lvlib"/>
 				<Item Name="NI_PtbyPt.lvlib" Type="Library" URL="/&lt;vilib&gt;/ptbypt/NI_PtbyPt.lvlib"/>
 				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
@@ -2154,10 +2158,38 @@ AddOutputFilter chunkFilter
 				<Item Name="eventvkey.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/eventvkey.ctl"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
-				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
+				<Item Name="Utilities.lvlib" Type="Library" URL="/&lt;vilib&gt;/myRIO/Instrument Drivers/Utilities/Utilities.lvlib"/>
+				<Item Name="myRIO v1.0 Close UART.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/UART/vis/myRIO v1.0 Close UART.vi"/>
+				<Item Name="myRIO v1.0 Reset FPGA.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/myRIO v1.0 Reset FPGA.vi"/>
+				<Item Name="myRIO v1.0 IRQ Info FGV.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/vis/myRIO v1.0 IRQ Info FGV.vi"/>
+				<Item Name="Generic IRQ Array.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/Generic IRQ Array.ctl"/>
+				<Item Name="Generic IRQ.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/Generic IRQ.ctl"/>
+				<Item Name="IRQ Type.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/IRQ Type.ctl"/>
+				<Item Name="IO IRQ Channels Enum.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/IO IRQ Channels Enum.ctl"/>
+				<Item Name="Callback VI Ref.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/Callback VI Ref.ctl"/>
+				<Item Name="myRIO v1.0 Timer IRQ Info FGV.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/vis/myRIO v1.0 Timer IRQ Info FGV.vi"/>
+				<Item Name="Timer IRQ Array.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/Timer IRQ Array.ctl"/>
+				<Item Name="Timer IRQ.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/Timer IRQ.ctl"/>
+				<Item Name="myRIO v1.0 ISR Agent.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/vis/myRIO v1.0 ISR Agent.vi"/>
+				<Item Name="myRIO v1.0 Clear All IRQ.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/vis/myRIO v1.0 Clear All IRQ.vi"/>
+				<Item Name="AI IRQ FPGA Reference.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/AI IRQ FPGA Reference.ctl"/>
+				<Item Name="DI IRQ FPGA Reference.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/DI IRQ FPGA Reference.ctl"/>
+				<Item Name="Timer IRQ FPGA Reference.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/Timer IRQ FPGA Reference.ctl"/>
+				<Item Name="myRIO v1.0 ISR Worker.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/vis/myRIO v1.0 ISR Worker.vi"/>
+				<Item Name="roboRIO v1.0 ISR Agent.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/roboRIO v1.0/IRQ/vis/roboRIO v1.0 ISR Agent.vi"/>
+				<Item Name="roboRIO v1.0 Clear All IRQ.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/roboRIO v1.0/IRQ/vis/roboRIO v1.0 Clear All IRQ.vi"/>
+				<Item Name="roboRIO AI IRQ FPGA Reference.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/roboRIO v1.0/IRQ/typedefs/roboRIO AI IRQ FPGA Reference.ctl"/>
+				<Item Name="roboRIO DI IRQ FPGA Reference.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/roboRIO v1.0/IRQ/typedefs/roboRIO DI IRQ FPGA Reference.ctl"/>
+				<Item Name="roboRIO v1.0 CAN Interface Manager.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/roboRIO v1.0/CAN/vis/roboRIO v1.0 CAN Interface Manager.vi"/>
+				<Item Name="CANCloseInterface.vi" Type="VI" URL="/&lt;vilib&gt;/RioEmbeddedCAN/RioEmbeddedCAN.llb/CANCloseInterface.vi"/>
+				<Item Name="CANStatusToError.vi" Type="VI" URL="/&lt;vilib&gt;/RioEmbeddedCAN/RioEmbeddedCAN.llb/CANStatusToError.vi"/>
+				<Item Name="CANStop.vi" Type="VI" URL="/&lt;vilib&gt;/RioEmbeddedCAN/RioEmbeddedCAN.llb/CANStop.vi"/>
 			</Item>
 			<Item Name="instr.lib" Type="Folder">
-				<Item Name="Hokuyo URG Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Hokuyo URG Series/Hokuyo URG Series.lvlib"/>
+				<Item Name="Initialize.vi" Type="VI" URL="/&lt;instrlib&gt;/Hokuyo URG Series/Public/Initialize.vi"/>
+				<Item Name="Initialize-cRIO-USB.vi" Type="VI" URL="/&lt;instrlib&gt;/Hokuyo URG Series/Public/Initialize-cRIO-USB.vi"/>
+				<Item Name="Acquire Data.vi" Type="VI" URL="/&lt;instrlib&gt;/Hokuyo URG Series/Public/Data/Acquire Data.vi"/>
+				<Item Name="Close.vi" Type="VI" URL="/&lt;instrlib&gt;/Hokuyo URG Series/Public/Close.vi"/>
 			</Item>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -2170,52 +2202,20 @@ AddOutputFilter chunkFilter
 			<Item Name="Obstacle Avoidance.vi" Type="VI" URL="../../Navigation/Obstacle Avoidance.vi"/>
 			<Item Name="Localise_both_methods - double split.vi" Type="VI" URL="../../Localisation/New ICP/Localise_both_methods - double split.vi"/>
 			<Item Name="Add LIDAR Offset.vi" Type="VI" URL="../../Gyroscope Driver/Add LIDAR Offset.vi"/>
-			<Item Name="Return Index from direction and orientation.vi" Type="VI" URL="../../LIDAR Code 2018/LIDAR Processing VIs/Return Index from direction and orientation.vi"/>
-			<Item Name="Median values.vi" Type="VI" URL="../../LIDAR Code 2018/LIDAR Processing VIs/Median values.vi"/>
-			<Item Name="X_dist FGV.vi" Type="VI" URL="../../LIDAR Code 2018/LIDAR Processing VIs/FGVs/X_dist FGV.vi"/>
-			<Item Name="Y_dist FGV.vi" Type="VI" URL="../../LIDAR Code 2018/LIDAR Processing VIs/FGVs/Y_dist FGV.vi"/>
-			<Item Name="Estimate Robot Position.vi" Type="VI" URL="../../Localisation/New ICP/Estimate Robot Position.vi"/>
-			<Item Name="Split and Merge.vi" Type="VI" URL="../../Localisation/New ICP/Split and Merge Corner finding/Split and Merge.vi"/>
-			<Item Name="Set all 0s to previous value.vi" Type="VI" URL="../../Localisation/New ICP/Split and Merge Corner finding/Set all 0s to previous value.vi"/>
-			<Item Name="LIDAR to Corners.vi" Type="VI" URL="../../Localisation/New ICP/Split and Merge Corner finding/LIDAR to Corners.vi"/>
-			<Item Name="Remove Points in Rectangle.vi" Type="VI" URL="../../Localisation/New ICP/Remove Points in Rectangle.vi"/>
-			<Item Name="Split.vi" Type="VI" URL="../../Localisation/New ICP/Split and Merge Corner finding/Split.vi"/>
-			<Item Name="Find Biggest Outlier.vi" Type="VI" URL="../../Localisation/New ICP/Split and Merge Corner finding/Find Biggest Outlier.vi"/>
-			<Item Name="Create Line through end points equation.vi" Type="VI" URL="../../Localisation/New ICP/Split and Merge Corner finding/Create Line through end points equation.vi"/>
-			<Item Name="Find perpendicular distance.vi" Type="VI" URL="../../Localisation/New ICP/Split and Merge Corner finding/Find perpendicular distance.vi"/>
-			<Item Name="Visualise Lines.vi" Type="VI" URL="../../Localisation/New ICP/Split and Merge Corner finding/Visualise Lines.vi"/>
-			<Item Name="Merge.vi" Type="VI" URL="../../Localisation/New ICP/Split and Merge Corner finding/Merge.vi"/>
-			<Item Name="Find Best Merge Candidate.vi" Type="VI" URL="../../Localisation/New ICP/Split and Merge Corner finding/Find Best Merge Candidate.vi"/>
-			<Item Name="Check outlier for merge.vi" Type="VI" URL="../../Localisation/New ICP/Split and Merge Corner finding/Check outlier for merge.vi"/>
-			<Item Name="Merge 2 lines in array.vi" Type="VI" URL="../../Localisation/New ICP/Split and Merge Corner finding/Merge 2 lines in array.vi"/>
-			<Item Name="Remove too small lines.vi" Type="VI" URL="../../Localisation/New ICP/Split and Merge Corner finding/Remove too small lines.vi"/>
-			<Item Name="Lines array to Corner Array.vi" Type="VI" URL="../../Localisation/New ICP/Split and Merge Corner finding/Lines array to Corner Array.vi"/>
-			<Item Name="Corners to Lidar indices.vi" Type="VI" URL="../../Localisation/New ICP/Split and Merge Corner finding/Corners to Lidar indices.vi"/>
-			<Item Name="Find Angle from Lines.vi" Type="VI" URL="../../Localisation/New ICP/Find Angle from Lines.vi"/>
-			<Item Name="Remove lines too short.vi" Type="VI" URL="../../Localisation/New ICP/Remove lines too short.vi"/>
-			<Item Name="Distance between lines.vi" Type="VI" URL="../../Localisation/New ICP/Distance between lines.vi"/>
-			<Item Name="Find Angle From Specific Line.vi" Type="VI" URL="../../Localisation/New ICP/Find Angle From Specific Line.vi"/>
-			<Item Name="Create Line of best fit equation.vi" Type="VI" URL="../../Localisation/New ICP/Create Line of best fit equation.vi"/>
-			<Item Name="Find how far off certain interval.vi" Type="VI" URL="../../Localisation/New ICP/Find how far off certain interval.vi"/>
-			<Item Name="Find angle from one line - bisquare ver.vi" Type="VI" URL="../../Localisation/New ICP/Find angle from one line - bisquare ver.vi"/>
-			<Item Name="Add all multiples of half Pi.vi" Type="VI" URL="../../Localisation/New ICP/Add all multiples of half Pi.vi"/>
-			<Item Name="Remove nans.vi" Type="VI" URL="../../Localisation/New ICP/Remove nans.vi"/>
-			<Item Name="Find closest match.vi" Type="VI" URL="../../Localisation/New ICP/Find closest match.vi"/>
-			<Item Name="Extrap.vi" Type="VI" URL="../../Localisation/New ICP/Extrap.vi"/>
-			<Item Name="Line-to-eqn.vi" Type="VI" URL="../../Localisation/New ICP/Line-to-eqn.vi"/>
-			<Item Name="Lines-perpendicular.vi" Type="VI" URL="../../Localisation/New ICP/Lines-perpendicular.vi"/>
-			<Item Name="Intersection-of-2-lines.vi" Type="VI" URL="../../Localisation/New ICP/Intersection-of-2-lines.vi"/>
-			<Item Name="Rotate corners.vi" Type="VI" URL="../../Localisation/New ICP/Rotate corners.vi"/>
-			<Item Name="Transform Corners From Robot Position.vi" Type="VI" URL="../../Localisation/New ICP/Transform Corners From Robot Position.vi"/>
-			<Item Name="Match Corners.vi" Type="VI" URL="../../Localisation/New ICP/Match Corners.vi"/>
-			<Item Name="Match Individual Corner.vi" Type="VI" URL="../../Localisation/New ICP/Match Individual Corner.vi"/>
-			<Item Name="Find Distance Between Two Points.vi" Type="VI" URL="../../Localisation/New ICP/Find Distance Between Two Points.vi"/>
-			<Item Name="Remove duplicate matching corners.vi" Type="VI" URL="../../Localisation/New ICP/Remove duplicate matching corners.vi"/>
-			<Item Name="Testing position.vi" Type="VI" URL="../../Localisation/New ICP/Testing position.vi"/>
-			<Item Name="Sudden change filter.vi" Type="VI" URL="../../Localisation/New ICP/Sudden change filter.vi"/>
 			<Item Name="Create XY Graph (subVI).vi" Type="VI" URL="../../LIDAR Test/LIDAR Code 2017/LIDAR Processing VIs/Create XY Graph (subVI).vi"/>
 			<Item Name="XY FGVs.vi" Type="VI" URL="../../LIDAR Code 2018/LIDAR Processing VIs/XY FGVs.vi"/>
-			<Item Name="Degrees to Array Length.vi" Type="VI" URL="../../LIDAR Code 2018/LIDAR Processing VIs/Degrees to Array Length.vi"/>
+			<Item Name="Button press.vi" Type="VI" URL="../Movement processing/Button press.vi"/>
+			<Item Name="Translational motor output.vi" Type="VI" URL="../Movement processing/Translational motor output.vi"/>
+			<Item Name="Stop.vi" Type="VI" URL="../Movement processing/Stop.vi"/>
+			<Item Name="Calculate rotation amount based on orientation.vi" Type="VI" URL="../Movement processing/Calculate rotation amount based on orientation.vi"/>
+			<Item Name="Rotational button press.vi" Type="VI" URL="../Movement processing/Rotational button press.vi"/>
+			<Item Name="Rotational Addition.vi" Type="VI" URL="../Movement processing/Rotational Addition.vi"/>
+			<Item Name="Stop delay.vi" Type="VI" URL="../Movement processing/Stop delay.vi"/>
+			<Item Name="Replace zeroes if not stopping 4x motors.vi" Type="VI" URL="../Movement processing/Replace zeroes if not stopping 4x motors.vi"/>
+			<Item Name="PID Motor C0.vi" Type="VI" URL="../Movement processing/PID subVIs/PID Motor C0.vi"/>
+			<Item Name="rioembeddedcanlvapi.dll" Type="Document" URL="rioembeddedcanlvapi.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

@@ -1,8 +1,8 @@
 [My Computer]
-My Computer = "192.168.1.15"
+My Computer = "192.168.0.4"
 
 [myRIO-USB]
-myRIO-USB = "192.168.4.80"
+myRIO-USB = "192.168.4.206"
 
 [RT myRIO Target]
 RT myRIO Target = "172.22.11.2"
