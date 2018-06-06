@@ -2,36 +2,11 @@
 <Project Type="Project" LVVersion="17008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
-	<Property Name="varPersistentID:{021D8962-E580-4CC2-993D-7E0E990217BE}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/Redundant/vel calc A (express VI).vi/Elapsed Timer/error out</Property>
-	<Property Name="varPersistentID:{08FBC70F-115C-4483-A9F0-17CC1BEA0FA1}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/Redundant/vel calc C1 (express VI).vi/Elapsed Timer/error in</Property>
-	<Property Name="varPersistentID:{14D69EE3-E181-4BD5-B27C-B792D0E7AC95}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/Redundant/vel calc A (express VI).vi/Elapsed Timer/reset mode</Property>
-	<Property Name="varPersistentID:{1C7713A8-4553-4747-AD5A-9C8680E48B21}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/Redundant/vel calc B (express VI).vi/Elapsed Timer/error in</Property>
-	<Property Name="varPersistentID:{1E2E0894-9EE1-4F6C-BE96-085A3E6D63DC}" Type="Ref">/myRIO-USB/Driving tests/Manual with LIDAR localisation - logging.vi/Elapsed Timer 1/error in</Property>
-	<Property Name="varPersistentID:{3A7DB613-AE07-4FCA-B009-B02B9CF9897A}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/Redundant/vel calc C0 (express VI).vi/Elapsed Timer/reset</Property>
 	<Property Name="varPersistentID:{3BE13087-531E-44EE-9C48-965D8C373190}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/vel calc C1 (express VI) - with Reset.vi/Elapsed Timer/elapsed time (ms)</Property>
-	<Property Name="varPersistentID:{43027D81-FF79-468F-A4DE-AF526D9CD1F7}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/Redundant/vel calc B (express VI).vi/Elapsed Timer/reset</Property>
-	<Property Name="varPersistentID:{46CF8FA8-567F-4A23-8ECD-DCE8876EE3C5}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/Redundant/vel calc C0 (express VI).vi/Elapsed Timer/elapsed time (ms)</Property>
 	<Property Name="varPersistentID:{4A78CE57-DDDD-4E9E-B4DF-2516D7279FFE}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/vel calc C1 (express VI) - with Reset.vi/Elapsed Timer/reset</Property>
-	<Property Name="varPersistentID:{6A421DC2-36A1-48BF-A7A9-5B83B9753BA1}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/Redundant/vel calc A (express VI).vi/Elapsed Timer/reset</Property>
-	<Property Name="varPersistentID:{6B697131-23CB-4E54-8B35-BC46F7E29FC5}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/Redundant/vel calc B (express VI).vi/Elapsed Timer/elapsed time (ms)</Property>
-	<Property Name="varPersistentID:{6F285EEE-9DFF-420C-97F4-8A755E68B526}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/Redundant/vel calc B (express VI).vi/Elapsed Timer/error out</Property>
-	<Property Name="varPersistentID:{7432129A-9702-4664-A56A-DFB20874B687}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/Redundant/vel calc C1 (express VI).vi/Elapsed Timer/elapsed time (ms)</Property>
-	<Property Name="varPersistentID:{787020B7-D0B8-4B21-B171-A9C8418019F5}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/Redundant/vel calc C0 (express VI).vi/Elapsed Timer/reset mode</Property>
-	<Property Name="varPersistentID:{8CBA5823-CB2D-432A-9ADE-328ED4AB0802}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/Redundant/vel calc C1 (express VI).vi/Elapsed Timer/error out</Property>
-	<Property Name="varPersistentID:{8E173C63-1C66-46A6-97F2-885C63BBB7F9}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/Redundant/vel calc C1 (express VI).vi/Elapsed Timer/reset mode</Property>
-	<Property Name="varPersistentID:{91D980E1-7501-44A9-A463-A457C1DFD7BF}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/Redundant/vel calc C0 (express VI).vi/Elapsed Timer/error out</Property>
-	<Property Name="varPersistentID:{9966A600-E421-4334-B959-245D635B4435}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/Redundant/vel calc A (express VI).vi/Elapsed Timer/error in</Property>
-	<Property Name="varPersistentID:{A1844D41-A16C-44D0-9DB8-0B2C8AC7DF84}" Type="Ref">/myRIO-USB/Driving tests/Manual with LIDAR localisation - logging.vi/Elapsed Timer 1/reset</Property>
 	<Property Name="varPersistentID:{B27E0EEC-0ABB-4DEF-BD99-F10E1776BCD5}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/vel calc C1 (express VI) - with Reset.vi/Elapsed Timer/error out</Property>
 	<Property Name="varPersistentID:{C195C612-77BD-4343-A2C4-0D21C28760DA}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/vel calc C1 (express VI) - with Reset.vi/Elapsed Timer/reset mode</Property>
-	<Property Name="varPersistentID:{C661BC48-2EBE-4792-8F14-2128A940E246}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/Redundant/vel calc C1 (express VI).vi/Elapsed Timer/reset</Property>
-	<Property Name="varPersistentID:{C6F501FA-5DFA-4E1D-A54C-D7A93434C0E8}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/Redundant/vel calc C0 (express VI).vi/Elapsed Timer/error in</Property>
-	<Property Name="varPersistentID:{C7158DE7-5724-4DDC-B7EC-0F7DA0419125}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/Redundant/vel calc A (express VI).vi/Elapsed Timer/elapsed time (ms)</Property>
-	<Property Name="varPersistentID:{D25EFEC1-004A-4B7C-B040-99D743A5E7E2}" Type="Ref">/myRIO-USB/Driving tests/Manual with LIDAR localisation - logging.vi/Elapsed Timer 1/error out</Property>
 	<Property Name="varPersistentID:{D449733F-3032-43E1-B9CA-6D2BEBFB7E9C}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/vel calc C1 (express VI) - with Reset.vi/Elapsed Timer/error in</Property>
-	<Property Name="varPersistentID:{DD182118-6831-45B2-BB0B-DC3E0153AF26}" Type="Ref">/myRIO-USB/Driving tests/Manual with LIDAR localisation - logging.vi/Elapsed Timer 1/reset mode</Property>
-	<Property Name="varPersistentID:{F15EE75D-A212-44F6-A8C6-5A60D57E495A}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/Redundant/vel calc B (express VI).vi/Elapsed Timer/reset mode</Property>
-	<Property Name="varPersistentID:{F92B346E-5112-47CB-B190-1D54E2DE44DF}" Type="Ref">/myRIO-USB/Driving tests/Manual with LIDAR localisation - logging.vi/Elapsed Timer 1/elapsed time (ms)</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="IOScan.Faults" Type="Str"></Property>
 		<Property Name="IOScan.NetVarPeriod" Type="UInt">100</Property>
@@ -62,7 +37,7 @@
 	</Item>
 	<Item Name="myRIO-USB" Type="RT myRIO">
 		<Property Name="alias.name" Type="Str">myRIO-USB</Property>
-		<Property Name="alias.value" Type="Str">192.168.4.206</Property>
+		<Property Name="alias.value" Type="Str">192.168.4.80</Property>
 		<Property Name="CCSymbols" Type="Str">TARGET_TYPE,RT;OS,Linux;CPU,ARM;DeviceCode,762F;FPGAPersonality,myRIO_FP_Custom;</Property>
 		<Property Name="crio.ControllerPID" Type="Str">762F</Property>
 		<Property Name="crio.family" Type="Str">ARMLinux</Property>
@@ -143,13 +118,10 @@ AddOutputFilter chunkFilter
 		<Item Name="Movement processing" Type="Folder" URL="../Movement processing">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="Basic PWM Testing" Type="Folder" URL="../Basic PWM Testing">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
-		</Item>
 		<Item Name="enc based vel calc FGVs" Type="Folder" URL="../enc based vel calc FGVs">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="Driving tests" Type="Folder" URL="../Driving tests">
+		<Item Name="Odometry" Type="Folder" URL="../Odometry">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="Chassis" Type="myRIO Chassis">
@@ -2125,57 +2097,25 @@ AddOutputFilter chunkFilter
 				<Item Name="NI_PID__prctrl compat.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID__prctrl compat.lvlib"/>
 				<Item Name="NI_PID_pid.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID_pid.lvlib"/>
 				<Item Name="lvpidtkt.dll" Type="Document" URL="/&lt;vilib&gt;/addons/control/pid/lvpidtkt.dll"/>
-				<Item Name="NI_PtbyPt.lvlib" Type="Library" URL="/&lt;vilib&gt;/ptbypt/NI_PtbyPt.lvlib"/>
-				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
-				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
-				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
-				<Item Name="General Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler.vi"/>
-				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogTypeEnum.ctl"/>
-				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler Core CORE.vi"/>
-				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
-				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
-				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
-				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetRTHostConnectedProp.vi"/>
-				<Item Name="Error Code Database.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Code Database.vi"/>
-				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
-				<Item Name="Format Message String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Format Message String.vi"/>
-				<Item Name="Find Tag.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find Tag.vi"/>
-				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
-				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
-				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
-				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
-				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog CORE.vi"/>
-				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
-				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
-				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
-				<Item Name="Get Text Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Get Text Rect.vi"/>
-				<Item Name="Get String Text Bounds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Get String Text Bounds.vi"/>
-				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
-				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
-				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
-				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
-				<Item Name="ErrWarn.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/ErrWarn.ctl"/>
-				<Item Name="eventvkey.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/eventvkey.ctl"/>
-				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
-				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
-				<Item Name="Utilities.lvlib" Type="Library" URL="/&lt;vilib&gt;/myRIO/Instrument Drivers/Utilities/Utilities.lvlib"/>
-				<Item Name="myRIO v1.0 Close UART.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/UART/vis/myRIO v1.0 Close UART.vi"/>
 				<Item Name="myRIO v1.0 Reset FPGA.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/myRIO v1.0 Reset FPGA.vi"/>
-				<Item Name="myRIO v1.0 IRQ Info FGV.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/vis/myRIO v1.0 IRQ Info FGV.vi"/>
-				<Item Name="Generic IRQ Array.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/Generic IRQ Array.ctl"/>
-				<Item Name="Generic IRQ.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/Generic IRQ.ctl"/>
-				<Item Name="IRQ Type.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/IRQ Type.ctl"/>
-				<Item Name="IO IRQ Channels Enum.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/IO IRQ Channels Enum.ctl"/>
 				<Item Name="Callback VI Ref.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/Callback VI Ref.ctl"/>
-				<Item Name="myRIO v1.0 Timer IRQ Info FGV.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/vis/myRIO v1.0 Timer IRQ Info FGV.vi"/>
-				<Item Name="Timer IRQ Array.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/Timer IRQ Array.ctl"/>
+				<Item Name="IO IRQ Channels Enum.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/IO IRQ Channels Enum.ctl"/>
+				<Item Name="IRQ Type.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/IRQ Type.ctl"/>
+				<Item Name="Generic IRQ.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/Generic IRQ.ctl"/>
+				<Item Name="Generic IRQ Array.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/Generic IRQ Array.ctl"/>
+				<Item Name="myRIO v1.0 IRQ Info FGV.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/vis/myRIO v1.0 IRQ Info FGV.vi"/>
 				<Item Name="Timer IRQ.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/Timer IRQ.ctl"/>
-				<Item Name="myRIO v1.0 ISR Agent.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/vis/myRIO v1.0 ISR Agent.vi"/>
-				<Item Name="myRIO v1.0 Clear All IRQ.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/vis/myRIO v1.0 Clear All IRQ.vi"/>
-				<Item Name="AI IRQ FPGA Reference.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/AI IRQ FPGA Reference.ctl"/>
-				<Item Name="DI IRQ FPGA Reference.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/DI IRQ FPGA Reference.ctl"/>
-				<Item Name="Timer IRQ FPGA Reference.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/Timer IRQ FPGA Reference.ctl"/>
+				<Item Name="Timer IRQ Array.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/Timer IRQ Array.ctl"/>
+				<Item Name="myRIO v1.0 Timer IRQ Info FGV.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/vis/myRIO v1.0 Timer IRQ Info FGV.vi"/>
 				<Item Name="myRIO v1.0 ISR Worker.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/vis/myRIO v1.0 ISR Worker.vi"/>
+				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
+				<Item Name="Timer IRQ FPGA Reference.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/Timer IRQ FPGA Reference.ctl"/>
+				<Item Name="DI IRQ FPGA Reference.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/DI IRQ FPGA Reference.ctl"/>
+				<Item Name="AI IRQ FPGA Reference.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/AI IRQ FPGA Reference.ctl"/>
+				<Item Name="myRIO v1.0 Clear All IRQ.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/vis/myRIO v1.0 Clear All IRQ.vi"/>
+				<Item Name="myRIO v1.0 ISR Agent.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/vis/myRIO v1.0 ISR Agent.vi"/>
+				<Item Name="myRIO v1.0 Close UART.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/UART/vis/myRIO v1.0 Close UART.vi"/>
+				<Item Name="Utilities.lvlib" Type="Library" URL="/&lt;vilib&gt;/myRIO/Instrument Drivers/Utilities/Utilities.lvlib"/>
 				<Item Name="roboRIO v1.0 ISR Agent.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/roboRIO v1.0/IRQ/vis/roboRIO v1.0 ISR Agent.vi"/>
 				<Item Name="roboRIO v1.0 Clear All IRQ.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/roboRIO v1.0/IRQ/vis/roboRIO v1.0 Clear All IRQ.vi"/>
 				<Item Name="roboRIO AI IRQ FPGA Reference.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/roboRIO v1.0/IRQ/typedefs/roboRIO AI IRQ FPGA Reference.ctl"/>
@@ -2185,34 +2125,10 @@ AddOutputFilter chunkFilter
 				<Item Name="CANStatusToError.vi" Type="VI" URL="/&lt;vilib&gt;/RioEmbeddedCAN/RioEmbeddedCAN.llb/CANStatusToError.vi"/>
 				<Item Name="CANStop.vi" Type="VI" URL="/&lt;vilib&gt;/RioEmbeddedCAN/RioEmbeddedCAN.llb/CANStop.vi"/>
 			</Item>
-			<Item Name="instr.lib" Type="Folder">
-				<Item Name="Initialize.vi" Type="VI" URL="/&lt;instrlib&gt;/Hokuyo URG Series/Public/Initialize.vi"/>
-				<Item Name="Initialize-cRIO-USB.vi" Type="VI" URL="/&lt;instrlib&gt;/Hokuyo URG Series/Public/Initialize-cRIO-USB.vi"/>
-				<Item Name="Acquire Data.vi" Type="VI" URL="/&lt;instrlib&gt;/Hokuyo URG Series/Public/Data/Acquire Data.vi"/>
-				<Item Name="Close.vi" Type="VI" URL="/&lt;instrlib&gt;/Hokuyo URG Series/Public/Close.vi"/>
-			</Item>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="3 wheel omni encoder odometry.vi" Type="VI" URL="../Encoder processing/3 wheel omni encoder odometry.vi"/>
-			<Item Name="begin.vi" Type="VI" URL="../../Gyroscope Driver/begin.vi"/>
-			<Item Name="Check gyro stability.vi" Type="VI" URL="../../Gyroscope Driver/Check gyro stability.vi"/>
-			<Item Name="gyroLoop v2.vi" Type="VI" URL="../../Gyroscope Driver/gyroLoop v2.vi"/>
-			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
-			<Item Name="Obstacle Avoidance.vi" Type="VI" URL="../../Navigation/Obstacle Avoidance.vi"/>
-			<Item Name="Localise_both_methods - double split.vi" Type="VI" URL="../../Localisation/New ICP/Localise_both_methods - double split.vi"/>
-			<Item Name="Add LIDAR Offset.vi" Type="VI" URL="../../Gyroscope Driver/Add LIDAR Offset.vi"/>
-			<Item Name="Create XY Graph (subVI).vi" Type="VI" URL="../../LIDAR Test/LIDAR Code 2017/LIDAR Processing VIs/Create XY Graph (subVI).vi"/>
-			<Item Name="XY FGVs.vi" Type="VI" URL="../../LIDAR Code 2018/LIDAR Processing VIs/XY FGVs.vi"/>
-			<Item Name="Button press.vi" Type="VI" URL="../Movement processing/Button press.vi"/>
-			<Item Name="Translational motor output.vi" Type="VI" URL="../Movement processing/Translational motor output.vi"/>
-			<Item Name="Stop.vi" Type="VI" URL="../Movement processing/Stop.vi"/>
-			<Item Name="Calculate rotation amount based on orientation.vi" Type="VI" URL="../Movement processing/Calculate rotation amount based on orientation.vi"/>
-			<Item Name="Rotational button press.vi" Type="VI" URL="../Movement processing/Rotational button press.vi"/>
-			<Item Name="Rotational Addition.vi" Type="VI" URL="../Movement processing/Rotational Addition.vi"/>
-			<Item Name="Stop delay.vi" Type="VI" URL="../Movement processing/Stop delay.vi"/>
-			<Item Name="Replace zeroes if not stopping 4x motors.vi" Type="VI" URL="../Movement processing/Replace zeroes if not stopping 4x motors.vi"/>
-			<Item Name="PID Motor C0.vi" Type="VI" URL="../Movement processing/PID subVIs/PID Motor C0.vi"/>
+			<Item Name="Position.ctl" Type="VI" URL="../../../040-typeDefs/Position.ctl"/>
 			<Item Name="rioembeddedcanlvapi.dll" Type="Document" URL="rioembeddedcanlvapi.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
