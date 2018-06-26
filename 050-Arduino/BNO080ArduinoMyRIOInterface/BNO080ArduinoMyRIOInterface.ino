@@ -314,7 +314,6 @@ void loop() {
     float yaw = atan2((quatI * quatJ + quatReal * quatK), ((quatReal * quatReal + quatI * quatI) - 0.5f));
     float pitch = -asin(2.0f * (quatI * quatK - quatReal * quatJ));
     float roll = atan2((quatReal * quatI + quatJ * quatK), ((quatReal * quatReal + quatK * quatK) - 0.5f));
-    yaw *= radtodeg; pitch *= radtodeg; roll *= radtodeg;
 
     if (yaw >= 0) Serial.print('+');
     Serial.print(yaw, 2); Serial.print(F(","));
