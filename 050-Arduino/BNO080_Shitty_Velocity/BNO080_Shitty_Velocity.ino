@@ -288,9 +288,9 @@ void loop() {
     float quatReal = imu.getQuatReal();
     float quatRadianAccuracy = imu.getQuatRadianAccuracy();
 
-    float accelX = getAccelX();
-    float accelY = getAccelY();
-    float accelZ = getAccelZ();
+    float accelX = imu.getAccelX();
+    float accelY = imu.getAccelY();
+    float accelZ = imu.getAccelZ();
     /*
 
       if (quatI >= 0) Serial.print('+');
