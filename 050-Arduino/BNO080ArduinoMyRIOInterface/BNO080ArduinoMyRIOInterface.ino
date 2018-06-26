@@ -1207,3 +1207,10 @@ void BNO080::printPacket(void)
 	}
 
 }
+
+/* 
+  yaw   =  atan2((q1 * q2 + q0 * q3), ((q0 * q0 + q1 * q1) - 0.5f));   
+  pitch = -asin(2.0f * (q1 * q3 - q0 * q2));
+  roll  =  atan2((q0 * q1 + q2 * q3), ((q0 * q0 + q3 * q3) - 0.5f));
+*/
+ 
