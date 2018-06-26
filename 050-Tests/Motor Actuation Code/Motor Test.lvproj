@@ -2,11 +2,6 @@
 <Project Type="Project" LVVersion="17008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
-	<Property Name="varPersistentID:{3BE13087-531E-44EE-9C48-965D8C373190}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/vel calc C1 (express VI) - with Reset.vi/Elapsed Timer/elapsed time (ms)</Property>
-	<Property Name="varPersistentID:{4A78CE57-DDDD-4E9E-B4DF-2516D7279FFE}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/vel calc C1 (express VI) - with Reset.vi/Elapsed Timer/reset</Property>
-	<Property Name="varPersistentID:{B27E0EEC-0ABB-4DEF-BD99-F10E1776BCD5}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/vel calc C1 (express VI) - with Reset.vi/Elapsed Timer/error out</Property>
-	<Property Name="varPersistentID:{C195C612-77BD-4343-A2C4-0D21C28760DA}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/vel calc C1 (express VI) - with Reset.vi/Elapsed Timer/reset mode</Property>
-	<Property Name="varPersistentID:{D449733F-3032-43E1-B9CA-6D2BEBFB7E9C}" Type="Ref">/myRIO-USB/enc based vel calc FGVs/vel calc C1 (express VI) - with Reset.vi/Elapsed Timer/error in</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="IOScan.Faults" Type="Str"></Property>
 		<Property Name="IOScan.NetVarPeriod" Type="UInt">100</Property>
