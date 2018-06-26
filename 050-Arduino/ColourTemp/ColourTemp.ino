@@ -4,7 +4,7 @@
 byte i2cWriteBuffer[10];
 byte i2cReadBuffer[10];
 
-
+#define SensorAddressWrite 0x29 //
 #define SensorAddressRead 0x29 // 
 #define EnableAddress 0xa0 // register address + command bits
 #define ATimeAddress 0xa1 // register address + command bits
