@@ -1,0 +1,4 @@
+wire the string "USB0::0x15D1::0x0000::NI-VISA-1002::1::RAW" to the visa resource name input of the hokuyo initalise vi
+
+interface with the myrio and run the following command 
+rmmod cdc-acm

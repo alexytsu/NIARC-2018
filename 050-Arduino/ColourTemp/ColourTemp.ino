@@ -79,45 +79,43 @@ Reads the register values for clear, red, green, and blue.
 */
 void get_Colors(void)
 {
-  unsigned int clear_color = 0;
-  unsigned int red_color = 0;
-  unsigned int green_color = 0;
-  unsigned int blue_color = 0;
+  float clear_color = 0;
+  float red_color = 0;
+  float green_color = 0;
+  float blue_color = 0;
 
   Readi2cRegisters(8,ColorAddress);
-  clear_color = (unsigned int)(i2cReadBuffer[1]<<8) + (unsigned int)i2cReadBuffer[0];
-  red_color = (unsigned int)(i2cReadBuffer[3]<<8) + (unsigned int)i2cReadBuffer[2];
-  green_color = (unsigned int)(i2cReadBuffer[5]<<8) + (unsigned int)i2cReadBuffer[4];
-  blue_color = (unsigned int)(i2cReadBuffer[7]<<8) + (unsigned int)i2cReadBuffer[6];
+  clear_color = (float)(i2cReadBuffer[1]<<8) + (float)i2cReadBuffer[0];
+  red_color = (float)(i2cReadBuffer[3]<<8) + (float)i2cReadBuffer[2];
+  green_color = (float)(i2cReadBuffer[5]<<8) + (float)i2cReadBuffer[4];
+  blue_color = (float)(i2cReadBuffer[7]<<8) + (float)i2cReadBuffer[6];
 
   // send register values to the serial monitor 
-
-  Serial.print("clear color=");
+/*
+  Serial.print("Total light: ");
   Serial.print(clear_color, DEC);    
-  Serial.print(" red color=");
+  Serial.print("Redness: ");
   Serial.print(red_color, DEC);    
-  Serial.print(" green color=");
+  Serial.print(" Greenness: ");
   Serial.print(green_color, DEC);    
-  Serial.print(" blue color=");
+  Serial.print(" Blueness: ");
   Serial.println(blue_color, DEC);
-
-
+*/
  // Basic RGB color differentiation can be accomplished by comparing the values and the largest reading will be 
  // the prominent color
 
-  if((clear_color<350))
-    Serial.println("detecting black");
+  if((clear_color<600))
+    Serial.println("Detecting black");
   else if((red_color>blue_color+green_color))
-    Serial.println("detecting red");
-  else if((green_color>blue_color) && (green_color>red_color))
-    Serial.println("detecting green");
+    Serial.println("Detecting red");
+  else if((red_color>blue_color) && (green_color>blue_color) && (blue_color/clear_color < 0.2))
+    Serial.println("Detecting yellow");
+  else if((green_color>blue_color) && (green_color>red_color) && (green_color/clear_color > 0.3))
+    Serial.println("Detecting green");
   else if((blue_color>red_color) && (blue_color>green_color))
-    Serial.println("detecting blue");
-  else if((red_color>blue_color) && (green_color>blue_color))
-    Serial.println("detecting yellow");
+    Serial.println("Detecting blue");
   else
-    Serial.println("color not detectable");
-
+    Serial.println("Not detectable");
 }  
 
 void setup() {
