@@ -272,80 +272,84 @@ void setup()
   // Initialise the imu
   imu.begin();
   Serial.println("Gyro beginned");
-  imu.enableRotationVector(50);
-  imu.enableAccelerometer(50);
+  imu.enableRotationVector(1);
+  imu.enableAccelerometer(1);
   Serial.println("Initialised!");
 }
 
 void loop() {
 
-  if (imu.dataAvailable() == true)
-  {
+  float linVelX = 0;
+  float linVelY = 0;
+  float linVelZ = 0;
+  
+  float quatI = imu.getQuatI();
+  float quatJ = imu.getQuatJ();
+  float quatK = imu.getQuatK();
+  float quatReal = imu.getQuatReal();
+  
+  float yawPrev = atan2((quatI * quatJ + quatReal * quatK), ((quatReal * quatReal + quatI * quatI) - 0.5f));
+  float pitchPrev = -asin(2.0f * (quatI * quatK - quatReal * quatJ));
+  float rollPrev = atan2((quatReal * quatI + quatJ * quatK), ((quatReal * quatReal + quatK * quatK) - 0.5f));
 
-    float quatI = imu.getQuatI();
-    float quatJ = imu.getQuatJ();
-    float quatK = imu.getQuatK();
-    float quatReal = imu.getQuatReal();
-    float quatRadianAccuracy = imu.getQuatRadianAccuracy();
-
-    float accelX = imu.getAccelX();
-    float accelY = imu.getAccelY();
-    float accelZ = imu.getAccelZ();
-    /*
-
-      if (quatI >= 0) Serial.print('+');
-      Serial.print(quatI, 2);
-
-      Serial.print(F(","));
-
-      if (quatJ >= 0) Serial.print('+');
-      Serial.print(quatJ, 2);
-
-      Serial.print(F(","));
-
-      if (quatK >= 0) Serial.print('+');
-      Serial.print(quatK, 2);
-
-      Serial.print(F(","));
-
-      if (quatReal > 0) Serial.print('+');
-      Serial.print(quatReal, 2);
-
-    */
-
-
-    // MAGIC HAHAHAHAHHAHAHHA
-    float radtodeg = 57.2958;
-    float yaw = atan2((quatI * quatJ + quatReal * quatK), ((quatReal * quatReal + quatI * quatI) - 0.5f));
-    float pitch = -asin(2.0f * (quatI * quatK - quatReal * quatJ));
-    float roll = atan2((quatReal * quatI + quatJ * quatK), ((quatReal * quatReal + quatK * quatK) - 0.5f));
-
-    Serial.print('o:');
-    if (yaw >= 0) Serial.print('+');
-    Serial.print(yaw, 3); Serial.print(F(","));
-    if (pitch >= 0) Serial.print('+');
-    Serial.print(pitch, 3); Serial.print(F(","));    
-    if (roll >= 0) Serial.print('+');
-    Serial.print(roll, 3);
-    Serial.println();
-
-    Serial.print('a:');
-    if (accelX >= 0) Serial.print('+');
-    Serial.print(accelX, 3); Serial.print(F(","));
-    if (accelY >= 0) Serial.print('+');
-    Serial.print(accelY, 3); Serial.print(F(","));    
-    if (accelZ >= 0) Serial.print('+');
-    Serial.print(accelZ, 3);
-    Serial.println();
-
-    /*
-      // Euler angles from quaternions (radians)
-      yaw   =  atan2((q1 * q2 + q0 * q3), ((q0 * q0 + q1 * q1) - 0.5f));
-      pitch = -asin(2.0f * (q1 * q3 - q0 * q2));
-      roll  =  atan2((q0 * q1 + q2 * q3), ((q0 * q0 + q3 * q3) - 0.5f));
-      yaw *= radtodeg;    pitch *= radtodeg;    roll *= radtodeg;
-    */
+  int t0 = millis();
+  int tCur = t0;
+  int tPrev = tCur;
+  int dt;
+  int i = 0;
+  while (i < 10) {
+    if (imu.dataAvailable() == true) {
+      tCur = millis();
+      dt = tCur - tPrev;
+      linVelX += imu.getLinAccelX()*dt;
+      linVelY += imu.getLinAccelY()*dt;
+      linVelZ += imu.getLinAccelZ()*dt;
+      tPrev = tCur;
+      i += 1;
+    }
   }
+
+  while(imu.dataAvailable() != true);
+  t1 = millis();
+  quatI = imu.getQuatI();
+  quatJ = imu.getQuatJ();
+  quatK = imu.getQuatK();
+  quatReal = imu.getQuatReal();
+  
+  float yawCur = atan2((quatI * quatJ + quatReal * quatK), ((quatReal * quatReal + quatI * quatI) - 0.5f));
+  float pitchCur = -asin(2.0f * (quatI * quatK - quatReal * quatJ));
+  float rollCur = atan2((quatReal * quatI + quatJ * quatK), ((quatReal * quatReal + quatK * quatK) - 0.5f));
+
+  float fullDt = t1 - t0;
+  float yawVel = (yawCur - yawPrev) / fullDt;
+  float pitchVel = (pitchCur - pitchPrev) / fullDt;
+  float rollDur = (rollCur - rollPrev) / fullDt;
+
+  Serial.print('o:');
+  if (yaw >= 0) Serial.print('+');
+  Serial.print(yaw, 3); Serial.print(F(","));
+  if (pitch >= 0) Serial.print('+');
+  Serial.print(pitch, 3); Serial.print(F(","));    
+  if (roll >= 0) Serial.print('+');
+  Serial.print(roll, 3);
+  Serial.println();
+
+  Serial.print('a:');
+  if (accelX >= 0) Serial.print('+');
+  Serial.print(accelX, 3); Serial.print(F(","));
+  if (accelY >= 0) Serial.print('+');
+  Serial.print(accelY, 3); Serial.print(F(","));    
+  if (accelZ >= 0) Serial.print('+');
+  Serial.print(accelZ, 3);
+  Serial.println();
+
+  /*
+    // Euler angles from quaternions (radians)
+    yaw   =  atan2((q1 * q2 + q0 * q3), ((q0 * q0 + q1 * q1) - 0.5f));
+    pitch = -asin(2.0f * (q1 * q3 - q0 * q2));
+    roll  =  atan2((q0 * q1 + q2 * q3), ((q0 * q0 + q3 * q3) - 0.5f));
+    yaw *= radtodeg;    pitch *= radtodeg;    roll *= radtodeg;
+  */
 
 }
 
