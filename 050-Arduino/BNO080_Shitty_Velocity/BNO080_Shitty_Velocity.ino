@@ -256,9 +256,13 @@ class BNO080 {
     int16_t magnetometer_Q1 = 4;
 };
 
-
+#define NUM_READINGS 10
 #include <Wire.h>
 BNO080 imu;
+
+float linVelX = 0;
+float linVelY = 0;
+float linVelZ = 0;
 
 void setup()
 {
@@ -277,12 +281,8 @@ void setup()
   Serial.println("Initialised!");
 }
 
-void loop() {
 
-  float linVelX = 0;
-  float linVelY = 0;
-  float linVelZ = 0;
-  
+void loop() {
   float quatI = imu.getQuatI();
   float quatJ = imu.getQuatJ();
   float quatK = imu.getQuatK();
@@ -292,25 +292,26 @@ void loop() {
   float pitchPrev = -asin(2.0f * (quatI * quatK - quatReal * quatJ));
   float rollPrev = atan2((quatReal * quatI + quatJ * quatK), ((quatReal * quatReal + quatK * quatK) - 0.5f));
 
-  int t0 = millis();
-  int tCur = t0;
-  int tPrev = tCur;
   int dt;
   int i = 0;
-  while (i < 10) {
-    if (imu.dataAvailable() == true) {
-      tCur = millis();
-      dt = tCur - tPrev;
-      linVelX += imu.getLinAccelX()*dt;
-      linVelY += imu.getLinAccelY()*dt;
-      linVelZ += imu.getLinAccelZ()*dt;
-      tPrev = tCur;
-      i += 1;
-    }
+  int linVelX_tmp = 0;
+  int linVelY_tmp = 0;
+  int linVelZ_tmp = 0;
+  int t0 = millis();
+  int tPrev = t0;
+  for (i = 0; i < NUM_READINGS; i++) {
+    while(imu.dataAvailable() != true);
+    linVelX_tmp += imu.getLinAccelX();
+    linVelY_tmp += imu.getLinAccelY();
+    linVelZ_tmp += imu.getLinAccelZ();
   }
-
+  int tCur = millis();
+  dt = tCur - tPrev;
+  linVelX += linVelX_tmp * NUM_READINGS / dt;
+  linVelY += linVelY_tmp * NUM_READINGS / dt;
+  linVelZ += linVelZ_tmp * NUM_READINGS / dt;
   while(imu.dataAvailable() != true);
-  t1 = millis();
+  int t1 = millis();
   quatI = imu.getQuatI();
   quatJ = imu.getQuatJ();
   quatK = imu.getQuatK();
@@ -323,24 +324,24 @@ void loop() {
   float fullDt = t1 - t0;
   float yawVel = (yawCur - yawPrev) / fullDt;
   float pitchVel = (pitchCur - pitchPrev) / fullDt;
-  float rollDur = (rollCur - rollPrev) / fullDt;
+  float rollVel = (rollCur - rollPrev) / fullDt;
 
-  Serial.print('o:');
-  if (yaw >= 0) Serial.print('+');
-  Serial.print(yaw, 3); Serial.print(F(","));
-  if (pitch >= 0) Serial.print('+');
-  Serial.print(pitch, 3); Serial.print(F(","));    
-  if (roll >= 0) Serial.print('+');
-  Serial.print(roll, 3);
+  Serial.print('do:');
+  if (yawVel >= 0) Serial.print('+');
+  Serial.print(yawVel, 3); Serial.print(F(","));
+  if (pitchVel >= 0) Serial.print('+');
+  Serial.print(pitchVel, 3); Serial.print(F(","));    
+  if (rollVel >= 0) Serial.print('+');
+  Serial.print(rollVel, 3);
   Serial.println();
 
-  Serial.print('a:');
-  if (accelX >= 0) Serial.print('+');
-  Serial.print(accelX, 3); Serial.print(F(","));
-  if (accelY >= 0) Serial.print('+');
-  Serial.print(accelY, 3); Serial.print(F(","));    
-  if (accelZ >= 0) Serial.print('+');
-  Serial.print(accelZ, 3);
+  Serial.print('da:');
+  if (linVelX >= 0) Serial.print('+');
+  Serial.print(linVelX, 3); Serial.print(F(","));
+  if (linVelY >= 0) Serial.print('+');
+  Serial.print(linVelY, 3); Serial.print(F(","));    
+  if (linVelZ >= 0) Serial.print('+');
+  Serial.print(linVelZ, 3);
   Serial.println();
 
   /*
