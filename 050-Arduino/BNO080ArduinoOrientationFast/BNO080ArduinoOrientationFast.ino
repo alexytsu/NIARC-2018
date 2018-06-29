@@ -256,121 +256,62 @@ class BNO080 {
     int16_t magnetometer_Q1 = 4;
 };
 
-#define NUM_READINGS 10
-int accelT = 1;
-int rotVecT = accelT * NUM_READINGS;
+
 #include <Wire.h>
 BNO080 imu;
 
-float linVelX = 0;
-float linVelY = 0;
-float linVelZ = 0;
+float yaw;
+float pitch;
+float roll;
 
-float accelXOffset = 0;
-float accelYOffset = 0;
-float accelZOffset = 0;
+float yawPrev;
+float pitchPrev;
+float rollPrev;
+
+int readTime = 1;
+int waitTime = 10;
 
 void setup()
 {
   // Serial communication with the MyRIO + status info
   Serial.begin(115200);
-
   // I2C communication with the IMU
   Wire.begin();
   //Wire.setClock(40000L);
-  Serial.println("Begin!");
   // Initialise the imu
   imu.begin();
-  Serial.println("Gyro beginned");
-  imu.enableRotationVector(rotVecT);
-  imu.enableAccelerometer(accelT);
-  int accelXTmp = 0;
-  int accelYTmp = 0;
-  int accelZTmp = 0;
-  for (int i = 0; i < NUM_READINGS; i++) {
-    while(imu.dataAvailable() != true);
-    accelXTmp += imu.getAccelX();
-    accelYTmp += imu.getAccelY();
-    accelZTmp += imu.getAccelZ();
-  }
-  accelXOffset = accelXTmp / NUM_READINGS;
-  accelYOffset = accelYTmp / NUM_READINGS;
-  accelZOffset = accelZTmp / NUM_READINGS;
-  Serial.println("Initialised!");
+  imu.enableRotationVector(readTime);
 }
 
-
 void loop() {
-
-  /*
-  float quatI = imu.getQuatI();
-  float quatJ = imu.getQuatJ();
-  float quatK = imu.getQuatK();
-  float quatReal = imu.getQuatReal();
-  
-  float yawPrev = atan2((quatI * quatJ + quatReal * quatK), ((quatReal * quatReal + quatI * quatI) - 0.5f));
-  float pitchPrev = -asin(2.0f * (quatI * quatK - quatReal * quatJ));
-  float rollPrev = atan2((quatReal * quatI + quatJ * quatK), ((quatReal * quatReal + quatK * quatK) - 0.5f));
-
-*/
-  int dt;
-  int i = 0;
-  int linVelX_tmp = 0;
-  int linVelY_tmp = 0;
-  int linVelZ_tmp = 0;
   int t0 = millis();
-  int tPrev = t0;
-  int tCur = millis();
-  dt = tCur - tPrev;
-  linVelX += linVelX_tmp * NUM_READINGS * 1000 / dt;
-  linVelY += linVelY_tmp * NUM_READINGS * 1000 / dt;
-  linVelZ += linVelZ_tmp * NUM_READINGS * 1000 / dt;
-  while(imu.dataAvailable() != true);
-  /*
-  int t1 = millis();
-  quatI = imu.getQuatI();
-  quatJ = imu.getQuatJ();
-  quatK = imu.getQuatK();
-  quatReal = imu.getQuatReal();
-  
-  float yawCur = atan2((quatI * quatJ + quatReal * quatK), ((quatReal * quatReal + quatI * quatI) - 0.5f));
-  float pitchCur = -asin(2.0f * (quatI * quatK - quatReal * quatJ));
-  float rollCur = atan2((quatReal * quatI + quatJ * quatK), ((quatReal * quatReal + quatK * quatK) - 0.5f));
-
-  float fullDt = t1 - t0;
-  float yawVel = (yawCur - yawPrev) * 1000 / fullDt;
-  float pitchVel = (pitchCur - pitchPrev) * 10000 / fullDt;
-  float rollVel = (rollCur - rollPrev) * 1000 / fullDt;
-
-  */
-/*
-  Serial.print("do:");
-  if (yawVel >= 0) Serial.print('+');
-  Serial.print(yawVel, 3); Serial.print(F(","));
-  if (pitchVel >= 0) Serial.print('+');
-  Serial.print(pitchVel, 3); Serial.print(F(","));    
-  if (rollVel >= 0) Serial.print('+');
-  Serial.print(rollVel, 3);
-  Serial.println();
-  */
-
-  Serial.print("dv:");
-  if (linVelX >= 0) Serial.print('+');
-  Serial.print(linVelX, 3); Serial.print(F(","));
-  if (linVelY >= 0) Serial.print('+');
-  Serial.print(linVelY, 3); Serial.print(F(","));    
-  if (linVelZ >= 0) Serial.print('+');
-  Serial.print(linVelZ, 3);
-  Serial.println();
-
-  /*
-    // Euler angles from quaternions (radians)
-    yaw   =  atan2((q1 * q2 + q0 * q3), ((q0 * q0 + q1 * q1) - 0.5f));
-    pitch = -asin(2.0f * (q1 * q3 - q0 * q2));
-    roll  =  atan2((q0 * q1 + q2 * q3), ((q0 * q0 + q3 * q3) - 0.5f));
-    yaw *= radtodeg;    pitch *= radtodeg;    roll *= radtodeg;
-  */
-
+  if(imu.dataAvailable() == true) {
+    float quatI = imu.getQuatI();
+    float quatJ = imu.getQuatJ();
+    float quatK = imu.getQuatK();
+    float quatReal = imu.getQuatReal();
+    //float quatRadianAccuracy = imu.getQuatRadianAccuracy();
+    float yaw = atan2((quatI * quatJ + quatReal * quatK), ((quatReal * quatReal + quatI * quatI) - 0.5f));
+    float pitch = -asin(2.0f * (quatI * quatK - quatReal * quatJ));
+    float roll = atan2((quatReal * quatI + quatJ * quatK), ((quatReal * quatReal + quatK * quatK) - 0.5f));
+    if (isnan(yaw) || isnan(pitch) || isnan(roll)) {
+      Serial.println();
+    } else {
+      if (yaw >= 0) Serial.print('+');
+      Serial.print(yaw, 3);
+      Serial.print(F(","));
+      if (pitch >= 0) Serial.print('+');
+      Serial.print(pitch, 3);
+      Serial.print(F(","));
+      if (roll >= 0) Serial.print('+');
+      Serial.print(roll, 3);
+      Serial.print(F(","));
+      Serial.println();
+    }
+  } else {
+    while((millis() - t0) < waitTime);
+    Serial.println();
+  }
 }
 
 //Attempt communication with the device
