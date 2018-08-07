@@ -2175,11 +2175,11 @@ AddOutputFilter chunkFilter
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Position.ctl" Type="VI" URL="../../../040-Typedefs/Position.ctl"/>
+			<Item Name="Position.ctl" Type="VI" URL="../../../040-typeDefs/Position.ctl"/>
 			<Item Name="rioembeddedcanlvapi.dll" Type="Document" URL="rioembeddedcanlvapi.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="LidarPoint.ctl" Type="VI" URL="../../../040-Typedefs/LidarPoint.ctl"/>
+			<Item Name="LidarPoint.ctl" Type="VI" URL="../../../040-typeDefs/LidarPoint.ctl"/>
 			<Item Name="Lidar Initialise.vi" Type="VI" URL="../../../020-Libraries/lidar/Lidar Initialise.vi"/>
 			<Item Name="Lidar Read.vi" Type="VI" URL="../../../020-Libraries/lidar/Lidar Read.vi"/>
 			<Item Name="Create XY Graph (subVI).vi" Type="VI" URL="../../../020-Libraries/lidar/Create XY Graph (subVI).vi"/>
