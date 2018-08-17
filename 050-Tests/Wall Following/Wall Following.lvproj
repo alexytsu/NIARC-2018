@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="16008000">
+<Project Type="Project" LVVersion="17008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
 	<Item Name="My Computer" Type="My Computer">
@@ -31,7 +31,7 @@
 	</Item>
 	<Item Name="teamP1zzz3r" Type="RT myRIO">
 		<Property Name="alias.name" Type="Str">teamP1zzz3r</Property>
-		<Property Name="alias.value" Type="Str">172.22.11.10</Property>
+		<Property Name="alias.value" Type="Str">172.22.11.2</Property>
 		<Property Name="CCSymbols" Type="Str">OS,Linux;CPU,ARM;DeviceCode,762F;TARGET_TYPE,RT;FPGAPersonality,myRIO_FP_Default;</Property>
 		<Property Name="crio.ControllerPID" Type="Str">762F</Property>
 		<Property Name="crio.family" Type="Str">ARMLinux</Property>
@@ -109,11 +109,15 @@ DirectoryIndex index.htm
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
 		<Item Name="Hokuyo_URG.lvlib" Type="Library" URL="../../../020-Libraries/A18-Hokuyo_URG/Hokuyo_URG.lvlib"/>
+		<Item Name="IndexArray.vi" Type="VI" URL="../IndexArray.vi"/>
 		<Item Name="Lidar Close.vi" Type="VI" URL="../../../020-Libraries/lidar/Lidar Close.vi"/>
 		<Item Name="Lidar Initialise.vi" Type="VI" URL="../../../020-Libraries/lidar/Lidar Initialise.vi"/>
 		<Item Name="Lidar Read.vi" Type="VI" URL="../../../020-Libraries/lidar/Lidar Read.vi"/>
+		<Item Name="Line Drawing.vi" Type="VI" URL="../Line Drawing.vi"/>
+		<Item Name="Line Extraction.vi" Type="VI" URL="../Line Extraction.vi"/>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
 		<Item Name="RANSAC.vi" Type="VI" URL="../RANSAC.vi"/>
+		<Item Name="ReplaceValArray.vi" Type="VI" URL="../ReplaceValArray.vi"/>
 		<Item Name="XY.ctl" Type="VI" URL="../XY.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
