@@ -108,6 +108,8 @@ DirectoryIndex index.htm
 		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
+		<Item Name="aStar.vi" Type="VI" URL="../aStar.vi"/>
+		<Item Name="Find-Path-with-Astar.vi" Type="VI" URL="../Find-Path-with-Astar.vi"/>
 		<Item Name="Hokuyo_URG.lvlib" Type="Library" URL="../../../020-Libraries/A18-Hokuyo_URG/Hokuyo_URG.lvlib"/>
 		<Item Name="IndexArray.vi" Type="VI" URL="../IndexArray.vi"/>
 		<Item Name="Lidar Close.vi" Type="VI" URL="../../../020-Libraries/lidar/Lidar Close.vi"/>
@@ -115,9 +117,12 @@ DirectoryIndex index.htm
 		<Item Name="Lidar Read.vi" Type="VI" URL="../../../020-Libraries/lidar/Lidar Read.vi"/>
 		<Item Name="Line Drawing.vi" Type="VI" URL="../Line Drawing.vi"/>
 		<Item Name="Line Extraction.vi" Type="VI" URL="../Line Extraction.vi"/>
+		<Item Name="LineDraw.vi" Type="VI" URL="../LineDraw.vi"/>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
+		<Item Name="Occupancy Grid Generation.vi" Type="VI" URL="../Occupancy Grid Generation.vi"/>
 		<Item Name="RANSAC.vi" Type="VI" URL="../RANSAC.vi"/>
 		<Item Name="ReplaceValArray.vi" Type="VI" URL="../ReplaceValArray.vi"/>
+		<Item Name="Shift Lidar.vi" Type="VI" URL="../Shift Lidar.vi"/>
 		<Item Name="XY.ctl" Type="VI" URL="../XY.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
@@ -150,6 +155,16 @@ DirectoryIndex index.htm
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
 				<Item Name="NI_PtbyPt.lvlib" Type="Library" URL="/&lt;vilib&gt;/ptbypt/NI_PtbyPt.lvlib"/>
+				<Item Name="NI_Robotics Utilities.lvlib" Type="Library" URL="/&lt;vilib&gt;/robotics/Utilities/NI_Robotics Utilities.lvlib"/>
+				<Item Name="NI_Robotics_AbstractAstarNode.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Navigation/shared/MapNode/AbstractAstarNode/NI_Robotics_AbstractAstarNode.lvclass"/>
+				<Item Name="NI_Robotics_AbstractDstarNode.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Navigation/shared/MapNode/AbstractDstarNode/NI_Robotics_AbstractDstarNode.lvclass"/>
+				<Item Name="NI_Robotics_AbstractDstarWorldMap.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Navigation/shared/WorldMap/AbstractDstarWorldMap/NI_Robotics_AbstractDstarWorldMap.lvclass"/>
+				<Item Name="NI_Robotics_AbstractMapNode.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Navigation/shared/MapNode/AbstractMapNode/NI_Robotics_AbstractMapNode.lvclass"/>
+				<Item Name="NI_Robotics_AbstractWorldMap.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Navigation/shared/WorldMap/AbstractWorldMap/NI_Robotics_AbstractWorldMap.lvclass"/>
+				<Item Name="NI_Robotics_Navigation .lvlib" Type="Library" URL="/&lt;vilib&gt;/robotics/Navigation/NI_Robotics_Navigation .lvlib"/>
+				<Item Name="NI_Robotics_OccupancyGridMapNode.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Navigation/shared/MapNode/OccupancyGridNode/NI_Robotics_OccupancyGridMapNode.lvclass"/>
+				<Item Name="NI_Robotics_OccupancyGridWorldMap.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Navigation/shared/WorldMap/OccupancyGridWorldMap/NI_Robotics_OccupancyGridWorldMap.lvclass"/>
+				<Item Name="NI_Robotics_Priority Queue.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Navigation/shared/Priority Queue/NI_Robotics_Priority Queue.lvclass"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
@@ -164,6 +179,7 @@ DirectoryIndex index.htm
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
 			<Item Name="Create XY Graph (subVI).vi" Type="VI" URL="../../../020-Libraries/lidar/Create XY Graph (subVI).vi"/>
+			<Item Name="Find Path with Astar.vi" Type="VI" URL="../../../Master/a-star/Find Path with Astar.vi"/>
 			<Item Name="LidarPoint.ctl" Type="VI" URL="../../../040-typeDefs/LidarPoint.ctl"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="Polar to Cartesian (subVI - Hideyoshi ver).vi" Type="VI" URL="../../../020-Libraries/lidar/LIDAR Processing VIs/Polar to Cartesian (subVI - Hideyoshi ver).vi"/>
