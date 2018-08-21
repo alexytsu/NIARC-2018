@@ -131,6 +131,9 @@ AddOutputFilter chunkFilter
 			<Item Name="Wall Following.lvproj" Type="Document" URL="../../Wall Following/Wall Following.lvproj"/>
 			<Item Name="XY.ctl" Type="VI" URL="../../Wall Following/XY.ctl"/>
 		</Item>
+		<Item Name="IMU" Type="Folder" URL="../../../020-Libraries/IMU">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="getanglefromlidar.vi" Type="VI" URL="../../Motor Code - Alex/getanglefromlidar.vi"/>
 		<Item Name="Chassis" Type="myRIO Chassis">
 			<Property Name="crio.ProgrammingMode" Type="Str">fpga</Property>
@@ -2178,6 +2181,10 @@ AddOutputFilter chunkFilter
 				<Item Name="NI_Robotics_AbstractDstarWorldMap.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Navigation/shared/WorldMap/AbstractDstarWorldMap/NI_Robotics_AbstractDstarWorldMap.lvclass"/>
 				<Item Name="NI_Robotics_Navigation .lvlib" Type="Library" URL="/&lt;vilib&gt;/robotics/Navigation/NI_Robotics_Navigation .lvlib"/>
 				<Item Name="NI_Robotics_Priority Queue.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Navigation/shared/Priority Queue/NI_Robotics_Priority Queue.lvclass"/>
+				<Item Name="UART.lvlib" Type="Library" URL="/&lt;vilib&gt;/myRIO/Instrument Drivers/Onboard IO/UART/UART.lvlib"/>
+				<Item Name="VISA Configure Serial Port" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port"/>
+				<Item Name="VISA Configure Serial Port (Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Instr).vi"/>
+				<Item Name="VISA Configure Serial Port (Serial Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Serial Instr).vi"/>
 			</Item>
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="Hokuyo URG Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Hokuyo URG Series/Hokuyo URG Series.lvlib"/>
