@@ -27,7 +27,12 @@
 			</Item>
 			<Item Name="myRIO Custom FPGA Project Documentation.html" Type="Document" URL="../documentation/myRIO Custom FPGA Project Documentation.html"/>
 		</Item>
-		<Item Name="Dependencies" Type="Dependencies"/>
+		<Item Name="getsteeringangle.vi" Type="VI" URL="../getsteeringangle.vi"/>
+		<Item Name="simulate.vi" Type="VI" URL="../simulate.vi"/>
+		<Item Name="Dependencies" Type="Dependencies">
+			<Item Name="Vector A to B.vi" Type="VI" URL="../Odometry/Vector A to B.vi"/>
+			<Item Name="Position.ctl" Type="VI" URL="../../../040-typeDefs/Position.ctl"/>
+		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 	<Item Name="myRIO-USB" Type="RT myRIO">
