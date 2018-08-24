@@ -2233,6 +2233,7 @@ AddOutputFilter chunkFilter
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="Shift Lidar.vi" Type="VI" URL="../../Wall Following/Shift Lidar.vi"/>
 			<Item Name="Find-Path-with-Astar.vi" Type="VI" URL="../../Wall Following/Find-Path-with-Astar.vi"/>
+			<Item Name="odometry.vi" Type="VI" URL="../Odometry/odometry.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
