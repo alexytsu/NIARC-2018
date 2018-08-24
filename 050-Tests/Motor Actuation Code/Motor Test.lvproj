@@ -37,7 +37,7 @@
 	</Item>
 	<Item Name="myRIO-USB" Type="RT myRIO">
 		<Property Name="alias.name" Type="Str">myRIO-USB</Property>
-		<Property Name="alias.value" Type="Str">172.22.11.2</Property>
+		<Property Name="alias.value" Type="Str">172.16.0.1</Property>
 		<Property Name="CCSymbols" Type="Str">TARGET_TYPE,RT;OS,Linux;CPU,ARM;DeviceCode,762F;FPGAPersonality,myRIO_FP_Custom;</Property>
 		<Property Name="crio.ControllerPID" Type="Str">762F</Property>
 		<Property Name="crio.family" Type="Str">ARMLinux</Property>
