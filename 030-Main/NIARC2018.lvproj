@@ -134,6 +134,7 @@ DirectoryIndex index.htm
 		<Item Name="KMeans test.vi" Type="VI" URL="../KMeans test.vi"/>
 		<Item Name="LidarTestFilter.vi" Type="VI" URL="../LidarTestFilter.vi"/>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
+		<Item Name="Pathing V2.vi" Type="VI" URL="../Pathing V2.vi"/>
 		<Item Name="RIOLIDARTEST.vi" Type="VI" URL="../RIOLIDARTEST.vi"/>
 		<Item Name="ScrimCode.vi" Type="VI" URL="../ScrimCode.vi"/>
 		<Item Name="Split and Merge Filter.vi" Type="VI" URL="../../niarc gay/Split and Merge Filter.vi"/>
@@ -334,6 +335,7 @@ DirectoryIndex index.htm
 			<Item Name="imu_init.vi" Type="VI" URL="../../niarc gay/imu_init.vi"/>
 			<Item Name="imu_read.vi" Type="VI" URL="../../../../020-Libraries/IMU/imu_read.vi"/>
 			<Item Name="imu_read.vi" Type="VI" URL="../../niarc gay/imu_read.vi"/>
+			<Item Name="Kmeans.vi" Type="VI" URL="../../niarc gay/Kmeans.vi"/>
 			<Item Name="Lidar Close.vi" Type="VI" URL="../../../../020-Libraries/lidar/Lidar Close.vi"/>
 			<Item Name="Lidar Close.vi" Type="VI" URL="../../020-Libraries/lidar/Lidar Close.vi"/>
 			<Item Name="Lidar Close.vi" Type="VI" URL="../../../020-Libraries/lidar/Lidar Close.vi"/>
@@ -354,6 +356,7 @@ DirectoryIndex index.htm
 			<Item Name="odometry.vi" Type="VI" URL="../../050-Tests/Motor Actuation Code/Odometry/odometry.vi"/>
 			<Item Name="odometry.vi" Type="VI" URL="../../niarc gay/Odometry/odometry.vi"/>
 			<Item Name="odometry.vi" Type="VI" URL="../../Odometry/odometry.vi"/>
+			<Item Name="Perpendicular.vi" Type="VI" URL="../../../../../Downloads/Perpendicular.vi"/>
 			<Item Name="PID Motor A.vi" Type="VI" URL="../../050-Tests/Motor Actuation Code/Movement processing/PID subVIs/PID Motor A.vi"/>
 			<Item Name="PID Motor B.vi" Type="VI" URL="../../050-Tests/Motor Actuation Code/Movement processing/PID subVIs/PID Motor B.vi"/>
 			<Item Name="PID Motors.vi" Type="VI" URL="../../050-Tests/Motor Actuation Code/Movement processing/PID subVIs/PID Motors.vi"/>
@@ -367,6 +370,7 @@ DirectoryIndex index.htm
 			<Item Name="rioembeddedcanlvapi.dll" Type="Document" URL="rioembeddedcanlvapi.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Shift Lidar.vi" Type="VI" URL="../../050-Tests/Wall Following/Shift Lidar.vi"/>
 			<Item Name="Shift Lidar.vi" Type="VI" URL="../../Wall Following/Shift Lidar.vi"/>
 			<Item Name="Shift Lidar.vi" Type="VI" URL="../../../Wall Following/Shift Lidar.vi"/>
 			<Item Name="stop_motors.vi" Type="VI" URL="../../050-Tests/Motor Actuation Code/Movement processing/Random Testing/stop_motors.vi"/>
