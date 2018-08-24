@@ -115,6 +115,7 @@ DirectoryIndex index.htm
 		<Item Name="RIOLIDARTEST.vi" Type="VI" URL="../RIOLIDARTEST.vi"/>
 		<Item Name="ScrimCode.vi" Type="VI" URL="../ScrimCode.vi"/>
 		<Item Name="SZONE.vi" Type="VI" URL="../SZONE.vi"/>
+		<Item Name="Test Array.vi" Type="VI" URL="../Test Array.vi"/>
 		<Item Name="Untitled 2.vi" Type="VI" URL="../Untitled 2.vi"/>
 		<Item Name="Untitled 3 (SubVI).vi" Type="VI" URL="../Untitled 3 (SubVI).vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
