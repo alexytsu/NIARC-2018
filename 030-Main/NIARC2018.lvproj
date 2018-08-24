@@ -109,11 +109,35 @@ DirectoryIndex index.htm
 		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
-		<Item Name="gay.vi" Type="VI" URL="../../050-Tests/Motor Actuation Code/gay.vi"/>
+		<Item Name="niarc gay" Type="Folder">
+			<Item Name="align_angle.vi" Type="VI" URL="../../niarc gay/align_angle.vi"/>
+			<Item Name="align_lidar_distance.vi" Type="VI" URL="../../niarc gay/align_lidar_distance.vi"/>
+			<Item Name="complementaryfilter.vi" Type="VI" URL="../../niarc gay/complementaryfilter.vi"/>
+			<Item Name="cooked.vi" Type="VI" URL="../../niarc gay/cooked.vi"/>
+			<Item Name="gay.vi" Type="VI" URL="../../niarc gay/gay.vi"/>
+			<Item Name="getsteeringangle.vi" Type="VI" URL="../../niarc gay/getsteeringangle.vi"/>
+			<Item Name="imu_data.ctl" Type="VI" URL="../../niarc gay/imu_data.ctl"/>
+			<Item Name="imufgv.vi" Type="VI" URL="../../niarc gay/imufgv.vi"/>
+			<Item Name="mergetest.vi" Type="VI" URL="../../niarc gay/mergetest.vi"/>
+			<Item Name="Move to Array of Points.vi" Type="VI" URL="../../niarc gay/Move to Array of Points.vi"/>
+			<Item Name="moveonapath.vi" Type="VI" URL="../../niarc gay/moveonapath.vi"/>
+			<Item Name="odometryfgv.vi" Type="VI" URL="../../niarc gay/odometryfgv.vi"/>
+			<Item Name="pid_test.vi" Type="VI" URL="../../niarc gay/pid_test.vi"/>
+			<Item Name="queuetest.vi" Type="VI" URL="../../niarc gay/queuetest.vi"/>
+			<Item Name="remote_control.vi" Type="VI" URL="../../niarc gay/remote_control.vi"/>
+			<Item Name="simulate.vi" Type="VI" URL="../../niarc gay/simulate.vi"/>
+			<Item Name="vector_to_xy.vi" Type="VI" URL="../../niarc gay/vector_to_xy.vi"/>
+		</Item>
+		<Item Name="Centroid Calc.vi" Type="VI" URL="../Centroid Calc.vi"/>
+		<Item Name="Distance tot Line.vi" Type="VI" URL="../../niarc gay/Distance tot Line.vi"/>
+		<Item Name="Eucledian Distance.vi" Type="VI" URL="../Eucledian Distance.vi"/>
+		<Item Name="KMeans test.vi" Type="VI" URL="../KMeans test.vi"/>
 		<Item Name="LidarTestFilter.vi" Type="VI" URL="../LidarTestFilter.vi"/>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
 		<Item Name="RIOLIDARTEST.vi" Type="VI" URL="../RIOLIDARTEST.vi"/>
 		<Item Name="ScrimCode.vi" Type="VI" URL="../ScrimCode.vi"/>
+		<Item Name="Split and Merge Filter.vi" Type="VI" URL="../../niarc gay/Split and Merge Filter.vi"/>
+		<Item Name="Split and Merge Test.vi" Type="VI" URL="../../niarc gay/Split and Merge Test.vi"/>
 		<Item Name="SZONE.vi" Type="VI" URL="../SZONE.vi"/>
 		<Item Name="Test Array.vi" Type="VI" URL="../Test Array.vi"/>
 		<Item Name="Untitled 2.vi" Type="VI" URL="../Untitled 2.vi"/>
@@ -224,6 +248,7 @@ DirectoryIndex index.htm
 				<Item Name="myRIO v1.0 Timer IRQ Info FGV.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/vis/myRIO v1.0 Timer IRQ Info FGV.vi"/>
 				<Item Name="myRIO v1.0 Unreserve Channel.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/Resource Manager/vis/myRIO v1.0 Unreserve Channel.vi"/>
 				<Item Name="myRIO v1.0 Wait for RDY.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/System/vis/myRIO v1.0 Wait for RDY.vi"/>
+				<Item Name="myRIO v1.0 Write DIO.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/DIO/vis/myRIO v1.0 Write DIO.vi"/>
 				<Item Name="myRIO v1.0 Write PWM.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/PWM/vis/myRIO v1.0 Write PWM.vi"/>
 				<Item Name="myRIO v1.1 DIO Channels Enum.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/DIO/typedefs/myRIO v1.1 DIO Channels Enum.ctl"/>
 				<Item Name="myRIO v1.1 Encoder Channels Enum.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/Encoder/typedefs/myRIO v1.1 Encoder Channels Enum.ctl"/>
@@ -270,6 +295,7 @@ DirectoryIndex index.htm
 				<Item Name="roboRIO v1.0 ISR Agent.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/roboRIO v1.0/IRQ/vis/roboRIO v1.0 ISR Agent.vi"/>
 				<Item Name="roboRIO v1.0 Read DIO.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/roboRIO v1.0/DIO/vis/roboRIO v1.0 Read DIO.vi"/>
 				<Item Name="roboRIO v1.0 Read Encoder.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/roboRIO v1.0/Encoder/vis/roboRIO v1.0 Read Encoder.vi"/>
+				<Item Name="roboRIO v1.0 Write DIO.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/roboRIO v1.0/DIO/vis/roboRIO v1.0 Write DIO.vi"/>
 				<Item Name="roboRIO v1.0 Write PWM.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/roboRIO v1.0/PWM/vis/roboRIO v1.0 Write PWM.vi"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
@@ -284,42 +310,77 @@ DirectoryIndex index.htm
 				<Item Name="Timer IRQ FPGA Reference.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/Timer IRQ FPGA Reference.ctl"/>
 				<Item Name="Timer IRQ.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/Timer IRQ.ctl"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
+				<Item Name="UART.lvlib" Type="Library" URL="/&lt;vilib&gt;/myRIO/Instrument Drivers/Onboard IO/UART/UART.lvlib"/>
 				<Item Name="Unlock Mutex.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/vis/Unlock Mutex.vi"/>
 				<Item Name="Utilities.lvlib" Type="Library" URL="/&lt;vilib&gt;/myRIO/Instrument Drivers/Utilities/Utilities.lvlib"/>
 				<Item Name="Validate Channels.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/vis/Validate Channels.vi"/>
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
+				<Item Name="VISA Configure Serial Port" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port"/>
+				<Item Name="VISA Configure Serial Port (Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Instr).vi"/>
+				<Item Name="VISA Configure Serial Port (Serial Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Serial Instr).vi"/>
 				<Item Name="Waveform Array To Dynamic.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/Waveform Array To Dynamic.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
 			<Item Name="Create XY Graph (subVI).vi" Type="VI" URL="../../020-Libraries/lidar/Create XY Graph (subVI).vi"/>
 			<Item Name="distance to speed scaler.vi" Type="VI" URL="../../050-Tests/Motor Actuation Code/Movement processing/distance to speed scaler.vi"/>
+			<Item Name="distance to speed scaler.vi" Type="VI" URL="../../niarc gay/Movement processing/distance to speed scaler.vi"/>
 			<Item Name="Duty Cycle Conversion.vi" Type="VI" URL="../../050-Tests/Motor Actuation Code/Movement processing/PID subVIs/Duty Cycle Conversion.vi"/>
 			<Item Name="Find-Path-with-Astar.vi" Type="VI" URL="../../050-Tests/Wall Following/Find-Path-with-Astar.vi"/>
+			<Item Name="Find-Path-with-Astar.vi" Type="VI" URL="../../Wall Following/Find-Path-with-Astar.vi"/>
 			<Item Name="getanglefromlidar.vi" Type="VI" URL="../../050-Tests/Motor Code - Alex/getanglefromlidar.vi"/>
+			<Item Name="IMU-UART-String-to-Euler.vi" Type="VI" URL="../../../../020-Libraries/IMU/IMU-UART-String-to-Euler.vi"/>
+			<Item Name="IMU-UART-String-to-Euler.vi" Type="VI" URL="../../niarc gay/IMU-UART-String-to-Euler.vi"/>
+			<Item Name="imu_init.vi" Type="VI" URL="../../../../020-Libraries/IMU/imu_init.vi"/>
+			<Item Name="imu_init.vi" Type="VI" URL="../../niarc gay/imu_init.vi"/>
+			<Item Name="imu_read.vi" Type="VI" URL="../../../../020-Libraries/IMU/imu_read.vi"/>
+			<Item Name="imu_read.vi" Type="VI" URL="../../niarc gay/imu_read.vi"/>
+			<Item Name="Lidar Close.vi" Type="VI" URL="../../../../020-Libraries/lidar/Lidar Close.vi"/>
 			<Item Name="Lidar Close.vi" Type="VI" URL="../../020-Libraries/lidar/Lidar Close.vi"/>
+			<Item Name="Lidar Close.vi" Type="VI" URL="../../../020-Libraries/lidar/Lidar Close.vi"/>
+			<Item Name="Lidar Initialise.vi" Type="VI" URL="../../../../020-Libraries/lidar/Lidar Initialise.vi"/>
 			<Item Name="Lidar Initialise.vi" Type="VI" URL="../../020-Libraries/lidar/Lidar Initialise.vi"/>
+			<Item Name="Lidar Initialise.vi" Type="VI" URL="../../../020-Libraries/lidar/Lidar Initialise.vi"/>
+			<Item Name="Lidar Read.vi" Type="VI" URL="../../../../020-Libraries/lidar/Lidar Read.vi"/>
 			<Item Name="Lidar Read.vi" Type="VI" URL="../../020-Libraries/lidar/Lidar Read.vi"/>
+			<Item Name="Lidar Read.vi" Type="VI" URL="../../../020-Libraries/lidar/Lidar Read.vi"/>
 			<Item Name="LidarPoint.ctl" Type="VI" URL="../../040-typeDefs/LidarPoint.ctl"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="normalise_angle.vi" Type="VI" URL="../../050-Tests/Motor Actuation Code/Movement processing/normalise_angle.vi"/>
+			<Item Name="normalise_angle.vi" Type="VI" URL="../../niarc gay/normalise_angle.vi"/>
+			<Item Name="normalise_angle.vi" Type="VI" URL="../../niarc gay/Movement processing/normalise_angle.vi"/>
 			<Item Name="odometry.vi" Type="VI" URL="../../050-Tests/Motor Actuation Code/Odometry/odometry.vi"/>
+			<Item Name="odometry.vi" Type="VI" URL="../../niarc gay/Odometry/odometry.vi"/>
+			<Item Name="odometry.vi" Type="VI" URL="../../Odometry/odometry.vi"/>
 			<Item Name="PID Motor A.vi" Type="VI" URL="../../050-Tests/Motor Actuation Code/Movement processing/PID subVIs/PID Motor A.vi"/>
 			<Item Name="PID Motor B.vi" Type="VI" URL="../../050-Tests/Motor Actuation Code/Movement processing/PID subVIs/PID Motor B.vi"/>
 			<Item Name="PID Motors.vi" Type="VI" URL="../../050-Tests/Motor Actuation Code/Movement processing/PID subVIs/PID Motors.vi"/>
+			<Item Name="PID Motors.vi" Type="VI" URL="../../niarc gay/Movement processing/PID subVIs/PID Motors.vi"/>
+			<Item Name="PID Motors.vi" Type="VI" URL="../../niarc gay/PID subVIs/PID Motors.vi"/>
 			<Item Name="Polar to Cartesian (subVI - Hideyoshi ver).vi" Type="VI" URL="../../020-Libraries/lidar/LIDAR Processing VIs/Polar to Cartesian (subVI - Hideyoshi ver).vi"/>
+			<Item Name="Position.ctl" Type="VI" URL="../../../../040-typeDefs/Position.ctl"/>
 			<Item Name="Position.ctl" Type="VI" URL="../../040-typeDefs/Position.ctl"/>
+			<Item Name="Position.ctl" Type="VI" URL="../../../040-typeDefs/Position.ctl"/>
 			<Item Name="RANSAC.vi" Type="VI" URL="../../050-Tests/Wall Following/RANSAC.vi"/>
 			<Item Name="rioembeddedcanlvapi.dll" Type="Document" URL="rioembeddedcanlvapi.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Shift Lidar.vi" Type="VI" URL="../../050-Tests/Wall Following/Shift Lidar.vi"/>
+			<Item Name="Shift Lidar.vi" Type="VI" URL="../../Wall Following/Shift Lidar.vi"/>
+			<Item Name="Shift Lidar.vi" Type="VI" URL="../../../Wall Following/Shift Lidar.vi"/>
 			<Item Name="stop_motors.vi" Type="VI" URL="../../050-Tests/Motor Actuation Code/Movement processing/Random Testing/stop_motors.vi"/>
+			<Item Name="stop_motors.vi" Type="VI" URL="../../niarc gay/Movement processing/Random Testing/stop_motors.vi"/>
+			<Item Name="stop_motors.vi" Type="VI" URL="../../niarc gay/Random Testing/stop_motors.vi"/>
 			<Item Name="Vector A to B.vi" Type="VI" URL="../../050-Tests/Motor Actuation Code/Odometry/Vector A to B.vi"/>
+			<Item Name="Vector A to B.vi" Type="VI" URL="../../niarc gay/Odometry/Vector A to B.vi"/>
+			<Item Name="Vector A to B.vi" Type="VI" URL="../../Odometry/Vector A to B.vi"/>
 			<Item Name="vel calc A (express VI) - with Reset.vi" Type="VI" URL="../../050-Tests/Motor Actuation Code/enc based vel calc FGVs/vel calc A (express VI) - with Reset.vi"/>
+			<Item Name="vel calc A (express VI) - with Reset.vi" Type="VI" URL="../../enc based vel calc FGVs/vel calc A (express VI) - with Reset.vi"/>
+			<Item Name="vel calc A (express VI) - with Reset.vi" Type="VI" URL="../../niarc gay/enc based vel calc FGVs/vel calc A (express VI) - with Reset.vi"/>
 			<Item Name="vel calc B (express VI) - with Reset.vi" Type="VI" URL="../../050-Tests/Motor Actuation Code/enc based vel calc FGVs/vel calc B (express VI) - with Reset.vi"/>
+			<Item Name="vel calc B (express VI) - with Reset.vi" Type="VI" URL="../../enc based vel calc FGVs/vel calc B (express VI) - with Reset.vi"/>
+			<Item Name="vel calc B (express VI) - with Reset.vi" Type="VI" URL="../../niarc gay/enc based vel calc FGVs/vel calc B (express VI) - with Reset.vi"/>
 			<Item Name="XY.ctl" Type="VI" URL="../../050-Tests/Wall Following/XY.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
