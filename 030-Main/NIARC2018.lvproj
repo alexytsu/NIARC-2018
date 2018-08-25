@@ -131,6 +131,7 @@ DirectoryIndex index.htm
 		<Item Name="Centroid Calc.vi" Type="VI" URL="../Centroid Calc.vi"/>
 		<Item Name="Distance tot Line.vi" Type="VI" URL="../../niarc gay/Distance tot Line.vi"/>
 		<Item Name="Eucledian Distance.vi" Type="VI" URL="../Eucledian Distance.vi"/>
+		<Item Name="External Wall.vi" Type="VI" URL="../../niarc gay/External Wall.vi"/>
 		<Item Name="KMeans test.vi" Type="VI" URL="../KMeans test.vi"/>
 		<Item Name="LidarTestFilter.vi" Type="VI" URL="../LidarTestFilter.vi"/>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
