@@ -143,7 +143,6 @@ DirectoryIndex index.htm
 		<Item Name="ScrimCode.vi" Type="VI" URL="../ScrimCode.vi"/>
 		<Item Name="Split and Merge Filter.vi" Type="VI" URL="../../niarc gay/Split and Merge Filter.vi"/>
 		<Item Name="split and merge test.vi" Type="VI" URL="../../050-Tests/Motor Code - Alex/split and merge test.vi"/>
-		<Item Name="Split and Merge Test.vi" Type="VI" URL="../../niarc gay/Split and Merge Test.vi"/>
 		<Item Name="SZONE.vi" Type="VI" URL="../SZONE.vi"/>
 		<Item Name="Test Array.vi" Type="VI" URL="../Test Array.vi"/>
 		<Item Name="Untitled 2.vi" Type="VI" URL="../Untitled 2.vi"/>
@@ -330,16 +329,11 @@ DirectoryIndex index.htm
 			</Item>
 			<Item Name="Create XY Graph (subVI).vi" Type="VI" URL="../../020-Libraries/lidar/Create XY Graph (subVI).vi"/>
 			<Item Name="distance to speed scaler.vi" Type="VI" URL="../../050-Tests/Motor Actuation Code/Movement processing/distance to speed scaler.vi"/>
-			<Item Name="distance to speed scaler.vi" Type="VI" URL="../../niarc gay/Movement processing/distance to speed scaler.vi"/>
 			<Item Name="Duty Cycle Conversion.vi" Type="VI" URL="../../050-Tests/Motor Actuation Code/Movement processing/PID subVIs/Duty Cycle Conversion.vi"/>
 			<Item Name="Find-Path-with-Astar.vi" Type="VI" URL="../../050-Tests/Wall Following/Find-Path-with-Astar.vi"/>
-			<Item Name="Find-Path-with-Astar.vi" Type="VI" URL="../../Wall Following/Find-Path-with-Astar.vi"/>
 			<Item Name="getanglefromlidar.vi" Type="VI" URL="../../050-Tests/Motor Code - Alex/getanglefromlidar.vi"/>
-			<Item Name="IMU-UART-String-to-Euler.vi" Type="VI" URL="../../../../020-Libraries/IMU/IMU-UART-String-to-Euler.vi"/>
 			<Item Name="IMU-UART-String-to-Euler.vi" Type="VI" URL="../../niarc gay/IMU-UART-String-to-Euler.vi"/>
-			<Item Name="imu_init.vi" Type="VI" URL="../../../../020-Libraries/IMU/imu_init.vi"/>
 			<Item Name="imu_init.vi" Type="VI" URL="../../niarc gay/imu_init.vi"/>
-			<Item Name="imu_read.vi" Type="VI" URL="../../../../020-Libraries/IMU/imu_read.vi"/>
 			<Item Name="imu_read.vi" Type="VI" URL="../../niarc gay/imu_read.vi"/>
 			<Item Name="Kmeans.vi" Type="VI" URL="../../niarc gay/Kmeans.vi"/>
 			<Item Name="Lidar Close.vi" Type="VI" URL="../../../../020-Libraries/lidar/Lidar Close.vi"/>
@@ -368,8 +362,6 @@ DirectoryIndex index.htm
 			<Item Name="PID Motors.vi" Type="VI" URL="../../niarc gay/Movement processing/PID subVIs/PID Motors.vi"/>
 			<Item Name="PID Motors.vi" Type="VI" URL="../../niarc gay/PID subVIs/PID Motors.vi"/>
 			<Item Name="Polar to Cartesian (subVI - Hideyoshi ver).vi" Type="VI" URL="../../020-Libraries/lidar/LIDAR Processing VIs/Polar to Cartesian (subVI - Hideyoshi ver).vi"/>
-			<Item Name="Position.ctl" Type="VI" URL="../../../../040-typeDefs/Position.ctl"/>
-			<Item Name="Position.ctl" Type="VI" URL="../../../040-typeDefs/Position.ctl"/>
 			<Item Name="RANSAC.vi" Type="VI" URL="../../050-Tests/Wall Following/RANSAC.vi"/>
 			<Item Name="rioembeddedcanlvapi.dll" Type="Document" URL="rioembeddedcanlvapi.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
