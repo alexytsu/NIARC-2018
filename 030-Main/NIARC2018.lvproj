@@ -128,7 +128,9 @@ DirectoryIndex index.htm
 			<Item Name="simulate.vi" Type="VI" URL="../../niarc gay/simulate.vi"/>
 			<Item Name="vector_to_xy.vi" Type="VI" URL="../../niarc gay/vector_to_xy.vi"/>
 		</Item>
+		<Item Name="booltest.vi" Type="VI" URL="../../050-Tests/Motor Code - Alex/booltest.vi"/>
 		<Item Name="Centroid Calc.vi" Type="VI" URL="../Centroid Calc.vi"/>
+		<Item Name="Distance Test.vi" Type="VI" URL="../../050-Tests/Motor Code - Alex/Distance Test.vi"/>
 		<Item Name="Distance tot Line.vi" Type="VI" URL="../../niarc gay/Distance tot Line.vi"/>
 		<Item Name="Eucledian Distance.vi" Type="VI" URL="../Eucledian Distance.vi"/>
 		<Item Name="External Wall.vi" Type="VI" URL="../../niarc gay/External Wall.vi"/>
@@ -136,6 +138,7 @@ DirectoryIndex index.htm
 		<Item Name="LidarTestFilter.vi" Type="VI" URL="../LidarTestFilter.vi"/>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
 		<Item Name="Pathing V2.vi" Type="VI" URL="../Pathing V2.vi"/>
+		<Item Name="radius_turn.vi" Type="VI" URL="../../050-Tests/Motor Code - Alex/radius_turn.vi"/>
 		<Item Name="RIOLIDARTEST.vi" Type="VI" URL="../RIOLIDARTEST.vi"/>
 		<Item Name="ScrimCode.vi" Type="VI" URL="../ScrimCode.vi"/>
 		<Item Name="Split and Merge Filter.vi" Type="VI" URL="../../niarc gay/Split and Merge Filter.vi"/>
@@ -304,6 +307,7 @@ DirectoryIndex index.htm
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
 				<Item Name="subBuildXYGraph.vi" Type="VI" URL="/&lt;vilib&gt;/express/express controls/BuildXYGraphBlock.llb/subBuildXYGraph.vi"/>
+				<Item Name="subTimeDelay.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/TimeDelayBlock.llb/subTimeDelay.vi"/>
 				<Item Name="System FPGA Reference.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/System/typedefs/System FPGA Reference.ctl"/>
 				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
 				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog CORE.vi"/>
