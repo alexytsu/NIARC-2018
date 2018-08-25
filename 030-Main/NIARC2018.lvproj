@@ -351,7 +351,6 @@ DirectoryIndex index.htm
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="normalise_angle.vi" Type="VI" URL="../../050-Tests/Motor Actuation Code/Movement processing/normalise_angle.vi"/>
-			<Item Name="normalise_angle.vi" Type="VI" URL="../../niarc gay/normalise_angle.vi"/>
 			<Item Name="normalise_angle.vi" Type="VI" URL="../../niarc gay/Movement processing/normalise_angle.vi"/>
 			<Item Name="odometry.vi" Type="VI" URL="../../050-Tests/Motor Actuation Code/Odometry/odometry.vi"/>
 			<Item Name="odometry.vi" Type="VI" URL="../../niarc gay/Odometry/odometry.vi"/>
