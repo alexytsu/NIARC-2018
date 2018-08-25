@@ -26,7 +26,6 @@
 			</Item>
 			<Item Name="myRIO Project Documentation.html" Type="Document" URL="../documentation/myRIO Project Documentation.html"/>
 		</Item>
-		<Item Name="Position.ctl" Type="VI" URL="../../040-typeDefs/Position.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -138,10 +137,12 @@ DirectoryIndex index.htm
 		<Item Name="LidarTestFilter.vi" Type="VI" URL="../LidarTestFilter.vi"/>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
 		<Item Name="Pathing V2.vi" Type="VI" URL="../Pathing V2.vi"/>
+		<Item Name="Position.ctl" Type="VI" URL="../../040-typeDefs/Position.ctl"/>
 		<Item Name="radius_turn.vi" Type="VI" URL="../../050-Tests/Motor Code - Alex/radius_turn.vi"/>
 		<Item Name="RIOLIDARTEST.vi" Type="VI" URL="../RIOLIDARTEST.vi"/>
 		<Item Name="ScrimCode.vi" Type="VI" URL="../ScrimCode.vi"/>
 		<Item Name="Split and Merge Filter.vi" Type="VI" URL="../../niarc gay/Split and Merge Filter.vi"/>
+		<Item Name="split and merge test.vi" Type="VI" URL="../../050-Tests/Motor Code - Alex/split and merge test.vi"/>
 		<Item Name="Split and Merge Test.vi" Type="VI" URL="../../niarc gay/Split and Merge Test.vi"/>
 		<Item Name="SZONE.vi" Type="VI" URL="../SZONE.vi"/>
 		<Item Name="Test Array.vi" Type="VI" URL="../Test Array.vi"/>
@@ -368,7 +369,6 @@ DirectoryIndex index.htm
 			<Item Name="PID Motors.vi" Type="VI" URL="../../niarc gay/PID subVIs/PID Motors.vi"/>
 			<Item Name="Polar to Cartesian (subVI - Hideyoshi ver).vi" Type="VI" URL="../../020-Libraries/lidar/LIDAR Processing VIs/Polar to Cartesian (subVI - Hideyoshi ver).vi"/>
 			<Item Name="Position.ctl" Type="VI" URL="../../../../040-typeDefs/Position.ctl"/>
-			<Item Name="Position.ctl" Type="VI" URL="../../040-typeDefs/Position.ctl"/>
 			<Item Name="Position.ctl" Type="VI" URL="../../../040-typeDefs/Position.ctl"/>
 			<Item Name="RANSAC.vi" Type="VI" URL="../../050-Tests/Wall Following/RANSAC.vi"/>
 			<Item Name="rioembeddedcanlvapi.dll" Type="Document" URL="rioembeddedcanlvapi.dll">
