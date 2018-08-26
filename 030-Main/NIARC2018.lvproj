@@ -134,6 +134,7 @@ DirectoryIndex index.htm
 		<Item Name="Centroid Calc.vi" Type="VI" URL="../Centroid Calc.vi"/>
 		<Item Name="Colour_Prediction.vi" Type="VI" URL="../../020-Libraries/colourSensor/testes/Colour_Prediction.vi"/>
 		<Item Name="ColourSensorProcess.vi" Type="VI" URL="../../020-Libraries/colourSensor/ColourSensorProcess.vi"/>
+		<Item Name="deque lidar distance.vi" Type="VI" URL="../../020-Libraries/colourSensor/deque lidar distance.vi"/>
 		<Item Name="Distance Test.vi" Type="VI" URL="../../050-Tests/Motor Code - Alex/Distance Test.vi"/>
 		<Item Name="Distance tot Line.vi" Type="VI" URL="../../niarc gay/Distance tot Line.vi"/>
 		<Item Name="Eucledian Distance.vi" Type="VI" URL="../Eucledian Distance.vi"/>
