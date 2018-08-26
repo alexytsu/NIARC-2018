@@ -1,3 +1,7 @@
 [ProjectWindow_Data]
+<<<<<<< HEAD
 ProjectExplorer.ClassicPosition[String] = "37,4,577,1090"
+=======
+ProjectExplorer.ClassicPosition[String] = "33,1,1049,959"
+>>>>>>> parent of 7902662... added function that always converts to most efficient angle
 
